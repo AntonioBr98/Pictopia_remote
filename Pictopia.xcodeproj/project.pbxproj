@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2B6292AD27B9249E00C42445 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */; };
+		2BDA997D27B94E3A00FF593C /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA997C27B94E3A00FF593C /* Discover.swift */; };
+		2BDA997F27B94E6800FF593C /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA997E27B94E6800FF593C /* SearchPage.swift */; };
+		2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA998027B94E7E00FF593C /* ProfilePage.swift */; };
 		2BF9101427B9142000324E31 /* PictopiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9101327B9142000324E31 /* PictopiaApp.swift */; };
 		2BF9101627B9142000324E31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9101527B9142000324E31 /* ContentView.swift */; };
 		2BF9101827B9142100324E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9101727B9142100324E31 /* Assets.xcassets */; };
@@ -36,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2BDA997C27B94E3A00FF593C /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
+		2BDA997E27B94E6800FF593C /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
+		2BDA998027B94E7E00FF593C /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		2BF9101027B9142000324E31 /* Pictopia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pictopia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF9101327B9142000324E31 /* PictopiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaApp.swift; sourceTree = "<group>"; };
 		2BF9101527B9142000324E31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +104,9 @@
 			children = (
 				2BF9101327B9142000324E31 /* PictopiaApp.swift */,
 				2BF9101527B9142000324E31 /* ContentView.swift */,
+				2BDA997C27B94E3A00FF593C /* Discover.swift */,
+				2BDA997E27B94E6800FF593C /* SearchPage.swift */,
+				2BDA998027B94E7E00FF593C /* ProfilePage.swift */,
 				2BF9101727B9142100324E31 /* Assets.xcassets */,
 				2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */,
 				2BF9101927B9142100324E31 /* Preview Content */,
@@ -263,6 +272,9 @@
 			files = (
 				2BF9101627B9142000324E31 /* ContentView.swift in Sources */,
 				2BF9101427B9142000324E31 /* PictopiaApp.swift in Sources */,
+				2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */,
+				2BDA997F27B94E6800FF593C /* SearchPage.swift in Sources */,
+				2BDA997D27B94E3A00FF593C /* Discover.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
