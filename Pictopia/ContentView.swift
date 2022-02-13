@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         Text("Se riuscite a vedere questo messaggio, tutto appostos")
             .padding()
-        //prova github
+        //prova github?
     }
 }
 
