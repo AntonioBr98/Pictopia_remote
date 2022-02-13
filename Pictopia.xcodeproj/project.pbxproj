@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BF9101427B9142000324E31 /* PictopiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9101327B9142000324E31 /* PictopiaApp.swift */; };
+		2BF9101627B9142000324E31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9101527B9142000324E31 /* ContentView.swift */; };
+		2BF9101827B9142100324E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9101727B9142100324E31 /* Assets.xcassets */; };
+		2BF9101B27B9142100324E31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9101A27B9142100324E31 /* Preview Assets.xcassets */; };
+		2BF9102527B9142100324E31 /* PictopiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9102427B9142100324E31 /* PictopiaTests.swift */; };
+		2BF9102F27B9142200324E31 /* PictopiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9102E27B9142200324E31 /* PictopiaUITests.swift */; };
+		2BF9103127B9142200324E31 /* PictopiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BF9102127B9142100324E31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BF9100827B9142000324E31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BF9100F27B9142000324E31;
+			remoteInfo = Pictopia;
+		};
+		2BF9102B27B9142200324E31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BF9100827B9142000324E31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BF9100F27B9142000324E31;
+			remoteInfo = Pictopia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BF9101027B9142000324E31 /* Pictopia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pictopia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF9101327B9142000324E31 /* PictopiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaApp.swift; sourceTree = "<group>"; };
+		2BF9101527B9142000324E31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2BF9101727B9142100324E31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BF9101A27B9142100324E31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2BF9102027B9142100324E31 /* PictopiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictopiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF9102427B9142100324E31 /* PictopiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaTests.swift; sourceTree = "<group>"; };
+		2BF9102A27B9142200324E31 /* PictopiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictopiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BF9102E27B9142200324E31 /* PictopiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaUITests.swift; sourceTree = "<group>"; };
+		2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BF9100D27B9142000324E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9101D27B9142100324E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9102727B9142200324E31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BF9100727B9142000324E31 = {
+			isa = PBXGroup;
+			children = (
+				2BF9101227B9142000324E31 /* Pictopia */,
+				2BF9102327B9142100324E31 /* PictopiaTests */,
+				2BF9102D27B9142200324E31 /* PictopiaUITests */,
+				2BF9101127B9142000324E31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BF9101127B9142000324E31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9101027B9142000324E31 /* Pictopia.app */,
+				2BF9102027B9142100324E31 /* PictopiaTests.xctest */,
+				2BF9102A27B9142200324E31 /* PictopiaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BF9101227B9142000324E31 /* Pictopia */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9101327B9142000324E31 /* PictopiaApp.swift */,
+				2BF9101527B9142000324E31 /* ContentView.swift */,
+				2BF9101727B9142100324E31 /* Assets.xcassets */,
+				2BF9101927B9142100324E31 /* Preview Content */,
+			);
+			path = Pictopia;
+			sourceTree = "<group>";
+		};
+		2BF9101927B9142100324E31 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9101A27B9142100324E31 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2BF9102327B9142100324E31 /* PictopiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9102427B9142100324E31 /* PictopiaTests.swift */,
+			);
+			path = PictopiaTests;
+			sourceTree = "<group>";
+		};
+		2BF9102D27B9142200324E31 /* PictopiaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2BF9102E27B9142200324E31 /* PictopiaUITests.swift */,
+				2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */,
+			);
+			path = PictopiaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BF9100F27B9142000324E31 /* Pictopia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF9103427B9142200324E31 /* Build configuration list for PBXNativeTarget "Pictopia" */;
+			buildPhases = (
+				2BF9100C27B9142000324E31 /* Sources */,
+				2BF9100D27B9142000324E31 /* Frameworks */,
+				2BF9100E27B9142000324E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pictopia;
+			productName = Pictopia;
+			productReference = 2BF9101027B9142000324E31 /* Pictopia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BF9101F27B9142100324E31 /* PictopiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF9103727B9142200324E31 /* Build configuration list for PBXNativeTarget "PictopiaTests" */;
+			buildPhases = (
+				2BF9101C27B9142100324E31 /* Sources */,
+				2BF9101D27B9142100324E31 /* Frameworks */,
+				2BF9101E27B9142100324E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BF9102227B9142100324E31 /* PBXTargetDependency */,
+			);
+			name = PictopiaTests;
+			productName = PictopiaTests;
+			productReference = 2BF9102027B9142100324E31 /* PictopiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BF9102927B9142200324E31 /* PictopiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BF9103A27B9142200324E31 /* Build configuration list for PBXNativeTarget "PictopiaUITests" */;
+			buildPhases = (
+				2BF9102627B9142200324E31 /* Sources */,
+				2BF9102727B9142200324E31 /* Frameworks */,
+				2BF9102827B9142200324E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BF9102C27B9142200324E31 /* PBXTargetDependency */,
+			);
+			name = PictopiaUITests;
+			productName = PictopiaUITests;
+			productReference = 2BF9102A27B9142200324E31 /* PictopiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BF9100827B9142000324E31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					2BF9100F27B9142000324E31 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					2BF9101F27B9142100324E31 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 2BF9100F27B9142000324E31;
+					};
+					2BF9102927B9142200324E31 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 2BF9100F27B9142000324E31;
+					};
+				};
+			};
+			buildConfigurationList = 2BF9100B27B9142000324E31 /* Build configuration list for PBXProject "Pictopia" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BF9100727B9142000324E31;
+			productRefGroup = 2BF9101127B9142000324E31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BF9100F27B9142000324E31 /* Pictopia */,
+				2BF9101F27B9142100324E31 /* PictopiaTests */,
+				2BF9102927B9142200324E31 /* PictopiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BF9100E27B9142000324E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9101B27B9142100324E31 /* Preview Assets.xcassets in Resources */,
+				2BF9101827B9142100324E31 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9101E27B9142100324E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9102827B9142200324E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BF9100C27B9142000324E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9101627B9142000324E31 /* ContentView.swift in Sources */,
+				2BF9101427B9142000324E31 /* PictopiaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9101C27B9142100324E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9102527B9142100324E31 /* PictopiaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BF9102627B9142200324E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF9103127B9142200324E31 /* PictopiaUITestsLaunchTests.swift in Sources */,
+				2BF9102F27B9142200324E31 /* PictopiaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BF9102227B9142100324E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BF9100F27B9142000324E31 /* Pictopia */;
+			targetProxy = 2BF9102127B9142100324E31 /* PBXContainerItemProxy */;
+		};
+		2BF9102C27B9142200324E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BF9100F27B9142000324E31 /* Pictopia */;
+			targetProxy = 2BF9102B27B9142200324E31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2BF9103227B9142200324E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2BF9103327B9142200324E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BF9103527B9142200324E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pictopia/Preview Content\"";
+				DEVELOPMENT_TEAM = 6NK492Y953;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = braccolino.com.Pictopia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BF9103627B9142200324E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pictopia/Preview Content\"";
+				DEVELOPMENT_TEAM = 6NK492Y953;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = braccolino.com.Pictopia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2BF9103827B9142200324E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NK492Y953;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = braccolino.com.PictopiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pictopia.app/Pictopia";
+			};
+			name = Debug;
+		};
+		2BF9103927B9142200324E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NK492Y953;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = braccolino.com.PictopiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pictopia.app/Pictopia";
+			};
+			name = Release;
+		};
+		2BF9103B27B9142200324E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NK492Y953;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = braccolino.com.PictopiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pictopia;
+			};
+			name = Debug;
+		};
+		2BF9103C27B9142200324E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6NK492Y953;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = braccolino.com.PictopiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pictopia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BF9100B27B9142000324E31 /* Build configuration list for PBXProject "Pictopia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF9103227B9142200324E31 /* Debug */,
+				2BF9103327B9142200324E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF9103427B9142200324E31 /* Build configuration list for PBXNativeTarget "Pictopia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF9103527B9142200324E31 /* Debug */,
+				2BF9103627B9142200324E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF9103727B9142200324E31 /* Build configuration list for PBXNativeTarget "PictopiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF9103827B9142200324E31 /* Debug */,
+				2BF9103927B9142200324E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BF9103A27B9142200324E31 /* Build configuration list for PBXNativeTarget "PictopiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BF9103B27B9142200324E31 /* Debug */,
+				2BF9103C27B9142200324E31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BF9100827B9142000324E31 /* Project object */;
+}
