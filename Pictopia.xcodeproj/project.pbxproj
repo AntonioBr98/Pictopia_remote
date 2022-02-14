@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2B6292AD27B9249E00C42445 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */; };
+		2BBD274527BA5A4A00FA5C07 /* CloudKitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBD274427BA5A4A00FA5C07 /* CloudKitUser.swift */; };
+		2BBD274927BA5AD200FA5C07 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBD274827BA5AD200FA5C07 /* CloudKit.framework */; };
 		2BDA997D27B94E3A00FF593C /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA997C27B94E3A00FF593C /* Discover.swift */; };
 		2BDA997F27B94E6800FF593C /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA997E27B94E6800FF593C /* SearchPage.swift */; };
 		2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA998027B94E7E00FF593C /* ProfilePage.swift */; };
@@ -39,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2BBD274427BA5A4A00FA5C07 /* CloudKitUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUser.swift; sourceTree = "<group>"; };
+		2BBD274627BA5A8200FA5C07 /* Pictopia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pictopia.entitlements; sourceTree = "<group>"; };
+		2BBD274827BA5AD200FA5C07 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		2BDA997C27B94E3A00FF593C /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
 		2BDA997E27B94E6800FF593C /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
 		2BDA998027B94E7E00FF593C /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BBD274927BA5AD200FA5C07 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +85,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BBD274327BA5A1000FA5C07 /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				2BBD274427BA5A4A00FA5C07 /* CloudKitUser.swift */,
+			);
+			path = CloudKit;
+			sourceTree = "<group>";
+		};
+		2BBD274727BA5AD200FA5C07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BBD274827BA5AD200FA5C07 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2BF9100727B9142000324E31 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +108,7 @@
 				2BF9102327B9142100324E31 /* PictopiaTests */,
 				2BF9102D27B9142200324E31 /* PictopiaUITests */,
 				2BF9101127B9142000324E31 /* Products */,
+				2BBD274727BA5AD200FA5C07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +125,7 @@
 		2BF9101227B9142000324E31 /* Pictopia */ = {
 			isa = PBXGroup;
 			children = (
+				2BBD274627BA5A8200FA5C07 /* Pictopia.entitlements */,
 				2BF9101327B9142000324E31 /* PictopiaApp.swift */,
 				2BF9101527B9142000324E31 /* ContentView.swift */,
 				2BDA997C27B94E3A00FF593C /* Discover.swift */,
@@ -109,6 +133,7 @@
 				2BDA998027B94E7E00FF593C /* ProfilePage.swift */,
 				2BF9101727B9142100324E31 /* Assets.xcassets */,
 				2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */,
+				2BBD274327BA5A1000FA5C07 /* CloudKit */,
 				2BF9101927B9142100324E31 /* Preview Content */,
 			);
 			path = Pictopia;
@@ -275,6 +300,7 @@
 				2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */,
 				2BDA997F27B94E6800FF593C /* SearchPage.swift in Sources */,
 				2BDA997D27B94E3A00FF593C /* Discover.swift in Sources */,
+				2BBD274527BA5A4A00FA5C07 /* CloudKitUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pictopia/Pictopia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pictopia/Preview Content\"";
@@ -462,6 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pictopia/Pictopia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pictopia/Preview Content\"";

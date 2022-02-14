@@ -11,7 +11,9 @@ import SwiftUI
 struct PictopiaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+//                .preferredColorScheme(ColorScheme .dark)
+            CloudKitUser()
                 .preferredColorScheme(ColorScheme .dark)
         }
     }
