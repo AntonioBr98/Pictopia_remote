@@ -10,8 +10,6 @@ import SwiftUI
 struct ProfilePage: View {
     var body: some View {
         Text("Profile,ciaoo")
-        
-        Text("Profile page")
     }
 }
 
