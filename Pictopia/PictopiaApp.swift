@@ -13,7 +13,9 @@ struct PictopiaApp: App {
         WindowGroup {
 //            ContentView()
 //                .preferredColorScheme(ColorScheme .dark)
-            CloudKitUser()
+//            CloudKitUser()
+//                .preferredColorScheme(ColorScheme .dark)
+            CloudKitCrud()
                 .preferredColorScheme(ColorScheme .dark)
         }
     }

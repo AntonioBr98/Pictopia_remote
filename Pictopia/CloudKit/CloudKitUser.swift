@@ -60,8 +60,23 @@ class CloudKitUserViewModel: ObservableObject{
                 if returnedStatus == .granted {
                     self?.perimissionStatus = true
                 }
-            }
+                
+//                MODIFICATO QUESTO, è UNA COSA MOLTO BRUTTA CHE HO FATTO, PERò DEVO VEDERE COME FUNZIONA
+//                IN PRATICA SE NON DANNO I PERMESSI LI RICHIEDE DI NUOVO(?)
+//                else{
+//                    CKContainer.default().requestApplicationPermission([.userDiscoverability]) { [weak self] returnedStatus, returnedError in
+//                    DispatchQueue.main.async {
+//                        if returnedStatus == .granted {
+//                            self?.perimissionStatus = true
+//                        }
+//                    }
+//                }
+//            }
+//                SE NON FUNZIONA CANCELLARE FINO A QUI
+               
+                
         }
+    }
     }
     
     
