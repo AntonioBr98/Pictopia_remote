@@ -21,6 +21,8 @@
 		2BF9102527B9142100324E31 /* PictopiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9102427B9142100324E31 /* PictopiaTests.swift */; };
 		2BF9102F27B9142200324E31 /* PictopiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9102E27B9142200324E31 /* PictopiaUITests.swift */; };
 		2BF9103127B9142200324E31 /* PictopiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */; };
+		C645AD5C27BC58D500DBE65C /* tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645AD5B27BC58D500DBE65C /* tutorial.swift */; };
+		C645AD5E27BC641900DBE65C /* ChallengeUploads.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645AD5D27BC641900DBE65C /* ChallengeUploads.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		2BF9102A27B9142200324E31 /* PictopiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictopiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF9102E27B9142200324E31 /* PictopiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaUITests.swift; sourceTree = "<group>"; };
 		2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C645AD5B27BC58D500DBE65C /* tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorial.swift; sourceTree = "<group>"; };
+		C645AD5D27BC641900DBE65C /* ChallengeUploads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeUploads.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 				2BF9101327B9142000324E31 /* PictopiaApp.swift */,
 				2BF9101527B9142000324E31 /* ContentView.swift */,
 				2BDA997C27B94E3A00FF593C /* Discover.swift */,
+				C645AD5A27BC587800DBE65C /* tutorialAndChallenge */,
 				2BDA997E27B94E6800FF593C /* SearchPage.swift */,
 				2BDA998027B94E7E00FF593C /* ProfilePage.swift */,
 				2BF9101727B9142100324E31 /* Assets.xcassets */,
@@ -165,6 +170,15 @@
 				2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */,
 			);
 			path = PictopiaUITests;
+			sourceTree = "<group>";
+		};
+		C645AD5A27BC587800DBE65C /* tutorialAndChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				C645AD5B27BC58D500DBE65C /* tutorial.swift */,
+				C645AD5D27BC641900DBE65C /* ChallengeUploads.swift */,
+			);
+			path = tutorialAndChallenge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,9 +314,11 @@
 			files = (
 				2BD97FFE27BBA73100D0EFC4 /* CloudKitCrud.swift in Sources */,
 				2BF9101627B9142000324E31 /* ContentView.swift in Sources */,
+				C645AD5E27BC641900DBE65C /* ChallengeUploads.swift in Sources */,
 				2BF9101427B9142000324E31 /* PictopiaApp.swift in Sources */,
 				2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */,
 				2BDA997F27B94E6800FF593C /* SearchPage.swift in Sources */,
+				C645AD5C27BC58D500DBE65C /* tutorial.swift in Sources */,
 				2BDA997D27B94E3A00FF593C /* Discover.swift in Sources */,
 				2BBD274527BA5A4A00FA5C07 /* CloudKitUser.swift in Sources */,
 			);
@@ -484,7 +500,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -515,7 +531,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
