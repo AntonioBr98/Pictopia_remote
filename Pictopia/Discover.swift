@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct Discover: View {
+    @State private var nav = false
+    
     var body: some View {
+            
+       
         Text("Discover")
     }
 }
