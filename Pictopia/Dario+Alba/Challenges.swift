@@ -14,16 +14,17 @@ class Challenges: ObservableObject {
 
     let composition = Item(name:"Central Perspective", image: "House", level: 2, category: ["Toplvl"])
     
-    let centperspect = Item(name:"Central Perspective", image: "cperspective", level: 2, category: ["composition"])
-    let rulethirds = Item(name:"Rule of Thirds", image: "rthirds", level: 2, category: ["composition"])
-    let centperspect2 = Item(name:"Central Perspective", image: "cperspective", level: 2, category: ["composition"])
-    let rulethirds2 = Item(name:"Rule of Thirds", image: "rthirds", level: 2, category: ["composition"])
-    
-    let lightpainting = Item(name:"Light Painting", image: "Lightpainting", level: 2, category: ["lights"])
+    let centperspect = Item(name:"Central Perspective", image: "cperspective", level: 2, category: ["composition", "MR", "EC"])
+    let rulethirds = Item(name:"Rule of Thirds", image: "rthirds", level: 2, category: ["composition", "MR", "EC"])
+    let portrait = Item(name:"Portrait", image: "portrait", level: 2, category: ["composition", "MR", "EC"])
+    let architectural = Item(name:"Architectural Photography", image: "architectural", level: 2, category: ["composition", "UF"])
+    let longexposure = Item(name:"Light Painting", image: "longexposure", level: 2, category: ["lights", "UF", "MR"])
+    let bokeh = Item(name:"Effetto Bokeh", image: "bokeh", level: 2, category: ["lights", "UF", "MR"])
+    let bandw = Item(name:"Black and White", image: "bandw", level: 2, category: ["lights", "UF", "MR"])
 
     init() {
 
-        self.allchallenges = [composition, centperspect, rulethirds, centperspect2, rulethirds2]
+        self.allchallenges = [composition, centperspect, rulethirds, bandw, bokeh, longexposure, architectural, portrait]
 
     }
     

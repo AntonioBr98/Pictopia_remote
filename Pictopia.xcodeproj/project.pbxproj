@@ -20,6 +20,7 @@
 		2BF9102527B9142100324E31 /* PictopiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9102427B9142100324E31 /* PictopiaTests.swift */; };
 		2BF9102F27B9142200324E31 /* PictopiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9102E27B9142200324E31 /* PictopiaUITests.swift */; };
 		2BF9103127B9142200324E31 /* PictopiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */; };
+		5397920727BDA65500DFDDA0 /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397920627BDA65500DFDDA0 /* Explore.swift */; };
 		53DCA8BE27BD43B400747270 /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BB27BD43B400747270 /* Challenges.swift */; };
 		53DCA8C027BD43B400747270 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BD27BD43B400747270 /* Objects.swift */; };
 		53DCA8C327BD440D00747270 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8C227BD440D00747270 /* Discover.swift */; };
@@ -60,6 +61,7 @@
 		2BF9102A27B9142200324E31 /* PictopiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictopiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF9102E27B9142200324E31 /* PictopiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaUITests.swift; sourceTree = "<group>"; };
 		2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5397920627BDA65500DFDDA0 /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
 		53DCA8BB27BD43B400747270 /* Challenges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
 		53DCA8BD27BD43B400747270 /* Objects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Objects.swift; path = ../Objects.swift; sourceTree = "<group>"; };
 		53DCA8C227BD440D00747270 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			children = (
 				53DCA8BB27BD43B400747270 /* Challenges.swift */,
 				53DCA8BD27BD43B400747270 /* Objects.swift */,
+				5397920627BDA65500DFDDA0 /* Explore.swift */,
 			);
 			path = "Dario+Alba";
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */,
 				53DCA8C327BD440D00747270 /* Discover.swift in Sources */,
 				53DCA8C027BD43B400747270 /* Objects.swift in Sources */,
+				5397920727BDA65500DFDDA0 /* Explore.swift in Sources */,
 				2BDA997F27B94E6800FF593C /* SearchPage.swift in Sources */,
 				2BBD274527BA5A4A00FA5C07 /* CloudKitUser.swift in Sources */,
 			);

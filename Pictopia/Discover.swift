@@ -15,52 +15,51 @@ struct Discover: View {
     @State private var number = 1
     @State private var tag = "composition"
     @StateObject var challenges = Challenges()
+    @StateObject var explore = ExploreItems()
     
     var body: some View {
         GeometryReader{ reader in
-        let columns = Array(
-            repeating: GridItem(.flexible(), spacing: spacing), count: number)
-       
+            let columns = Array(
+                repeating: GridItem(.flexible(), spacing: spacing), count: number)
+            
             NavigationView {
-        ScrollView(showsIndicators: false){
-            VStack(spacing: 0){
-                
-                VStack{
-                    Text("Most Recent")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .padding([.top, .leading])
-                }
-                .frame(width: reader.size.width, alignment: .leading)
-                
-                ScrollView(.horizontal,showsIndicators: false){
-                    LazyHGrid(rows: columns, spacing: spacing){
-                            ForEach(challenges.allchallenges.filter { $0.category.contains(tag)}){ item in
-                                Button(action: {
-
-                                }){
-                                    ItemView(item: item)
-                                }
-                            }
+                ScrollView(showsIndicators: false){
+                    
+                    ForEach(explore.exploreitems){ expitem in
                         
-
-
+                        VStack(spacing: 0){
+                            VStack{
+                                Text(expitem.name)
+                                    .font(.title)
+                                    .fontWeight(.semibold)
+                                    .padding([.top, .leading])
+                            }
+                            .frame(width: reader.size.width, alignment: .leading)
+                            
+                            ScrollView(.horizontal,showsIndicators: false){
+                                LazyHGrid(rows: columns, spacing: spacing){
+                                    ForEach(challenges.allchallenges.filter { $0.category.contains(expitem.tag)}){ item in
+                                        Button(action: {
+                                        }){
+                                            ItemView(item: item)
+                                        }
+                                    }
+                                    
+                                }
+                                .padding(.horizontal)
+                                .padding(.vertical)
+                            }
+                            
+                        }
                     }
-                    .padding(.horizontal)
-                    .padding(.vertical)
                 }
-
+                .navigationTitle("Discover")
             }
             
-            
         }
-        .navigationTitle("Discover")
-        }
-            
     }
 }
-}
-                                
+
 struct ItemView: View {
     
     let item:Item
@@ -81,16 +80,17 @@ struct ItemView: View {
                     .frame(width: imageWidth)
                     .overlay(
                         Text (item.name)
-                                .font(.headline)
-                                .fontWeight(.bold)
+                            .font(.headline)
+                            .fontWeight(.semibold)
                             .foregroundColor(Color.white)
+                            .multilineTextAlignment(.leading)
                         , alignment: .bottomLeading
                     )
             }
             .frame(width: reader.size.width, height: reader.size.height)
             
         }
-        .frame(width: 180, height: 250)
+        .frame(width: 160, height: 200)
         .clipShape(RoundedRectangle(cornerRadius: 20))
         
     }
