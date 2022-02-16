@@ -10,13 +10,52 @@ import SwiftUI
 struct ChallengeUploads: View {
     @Binding var showChallengeUpdates: Bool
     
+    let columns: [GridItem] = [GridItem(), GridItem(), GridItem()]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            
+        VStack(alignment: .leading) {
+                Text("Photo Reference")
+                    .font(.title3)
+                    .multilineTextAlignment(.leading)
+                
+                Image("PngLosVigil")
+                    .resizable()
+                    .scaledToFit()
+                
+                Text("Challenge Uploads")
+                    .font(.title3)
+                    .multilineTextAlignment(.leading)
+
+                
+                LazyVGrid(columns: columns) {
+                    
+                    Text("Placeholder")
+                    Text("Placeholder")
+                    Text("Placeholder")
+                    Text("Placeholder")
+                    Text("Placeholder")
+                    Text("Placeholder")
+
+                }
+                
+            }
+            .padding()
+            .navigationTitle("Join the Challenge")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(trailing:
+                Button {
+                
+                } label: {
+                    Image(systemName: "plus")
+            })
+        }
+        
     }
-}
 
 struct ChallengeUploads_Previews: PreviewProvider {
     static var previews: some View {
         ChallengeUploads(showChallengeUpdates: .constant(true))
+            .preferredColorScheme(ColorScheme .dark)
     }
 }

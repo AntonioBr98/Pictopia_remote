@@ -23,6 +23,7 @@
 		2BF9103127B9142200324E31 /* PictopiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */; };
 		C645AD5C27BC58D500DBE65C /* tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645AD5B27BC58D500DBE65C /* tutorial.swift */; };
 		C645AD5E27BC641900DBE65C /* ChallengeUploads.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645AD5D27BC641900DBE65C /* ChallengeUploads.swift */; };
+		C6B742D727BDBA1300F3ABEB /* VideoTest.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C6B742D627BDBA1300F3ABEB /* VideoTest.MOV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C645AD5B27BC58D500DBE65C /* tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorial.swift; sourceTree = "<group>"; };
 		C645AD5D27BC641900DBE65C /* ChallengeUploads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeUploads.swift; sourceTree = "<group>"; };
+		C6B742D627BDBA1300F3ABEB /* VideoTest.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = VideoTest.MOV; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			children = (
 				C645AD5B27BC58D500DBE65C /* tutorial.swift */,
 				C645AD5D27BC641900DBE65C /* ChallengeUploads.swift */,
+				C6B742D627BDBA1300F3ABEB /* VideoTest.MOV */,
 			);
 			path = tutorialAndChallenge;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B6292AD27B9249E00C42445 /* Launch Screen.storyboard in Resources */,
+				C6B742D727BDBA1300F3ABEB /* VideoTest.MOV in Resources */,
 				2BF9101B27B9142100324E31 /* Preview Assets.xcassets in Resources */,
 				2BF9101827B9142100324E31 /* Assets.xcassets in Resources */,
 			);
