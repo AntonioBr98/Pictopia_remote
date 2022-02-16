@@ -11,7 +11,6 @@
 		2BBD274527BA5A4A00FA5C07 /* CloudKitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBD274427BA5A4A00FA5C07 /* CloudKitUser.swift */; };
 		2BBD274927BA5AD200FA5C07 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBD274827BA5AD200FA5C07 /* CloudKit.framework */; };
 		2BD97FFE27BBA73100D0EFC4 /* CloudKitCrud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD97FFD27BBA73100D0EFC4 /* CloudKitCrud.swift */; };
-		2BDA997D27B94E3A00FF593C /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA997C27B94E3A00FF593C /* Discover.swift */; };
 		2BDA997F27B94E6800FF593C /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA997E27B94E6800FF593C /* SearchPage.swift */; };
 		2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA998027B94E7E00FF593C /* ProfilePage.swift */; };
 		2BF9101427B9142000324E31 /* PictopiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9101327B9142000324E31 /* PictopiaApp.swift */; };
@@ -21,6 +20,9 @@
 		2BF9102527B9142100324E31 /* PictopiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9102427B9142100324E31 /* PictopiaTests.swift */; };
 		2BF9102F27B9142200324E31 /* PictopiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9102E27B9142200324E31 /* PictopiaUITests.swift */; };
 		2BF9103127B9142200324E31 /* PictopiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */; };
+		53DCA8BE27BD43B400747270 /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BB27BD43B400747270 /* Challenges.swift */; };
+		53DCA8C027BD43B400747270 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BD27BD43B400747270 /* Objects.swift */; };
+		53DCA8C327BD440D00747270 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8C227BD440D00747270 /* Discover.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,6 @@
 		2BBD274627BA5A8200FA5C07 /* Pictopia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pictopia.entitlements; sourceTree = "<group>"; };
 		2BBD274827BA5AD200FA5C07 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		2BD97FFD27BBA73100D0EFC4 /* CloudKitCrud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitCrud.swift; sourceTree = "<group>"; };
-		2BDA997C27B94E3A00FF593C /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
 		2BDA997E27B94E6800FF593C /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
 		2BDA998027B94E7E00FF593C /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		2BF9101027B9142000324E31 /* Pictopia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pictopia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +60,9 @@
 		2BF9102A27B9142200324E31 /* PictopiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictopiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF9102E27B9142200324E31 /* PictopiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaUITests.swift; sourceTree = "<group>"; };
 		2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53DCA8BB27BD43B400747270 /* Challenges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
+		53DCA8BD27BD43B400747270 /* Objects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Objects.swift; path = ../Objects.swift; sourceTree = "<group>"; };
+		53DCA8C227BD440D00747270 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,11 +135,12 @@
 				2BBD274627BA5A8200FA5C07 /* Pictopia.entitlements */,
 				2BF9101327B9142000324E31 /* PictopiaApp.swift */,
 				2BF9101527B9142000324E31 /* ContentView.swift */,
-				2BDA997C27B94E3A00FF593C /* Discover.swift */,
 				2BDA997E27B94E6800FF593C /* SearchPage.swift */,
 				2BDA998027B94E7E00FF593C /* ProfilePage.swift */,
+				53DCA8C227BD440D00747270 /* Discover.swift */,
 				2BF9101727B9142100324E31 /* Assets.xcassets */,
 				2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */,
+				53DCA8C127BD43E200747270 /* Dario+Alba */,
 				2BBD274327BA5A1000FA5C07 /* CloudKit */,
 				2BF9101927B9142100324E31 /* Preview Content */,
 			);
@@ -165,6 +170,15 @@
 				2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */,
 			);
 			path = PictopiaUITests;
+			sourceTree = "<group>";
+		};
+		53DCA8C127BD43E200747270 /* Dario+Alba */ = {
+			isa = PBXGroup;
+			children = (
+				53DCA8BB27BD43B400747270 /* Challenges.swift */,
+				53DCA8BD27BD43B400747270 /* Objects.swift */,
+			);
+			path = "Dario+Alba";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,11 +313,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BD97FFE27BBA73100D0EFC4 /* CloudKitCrud.swift in Sources */,
+				53DCA8BE27BD43B400747270 /* Challenges.swift in Sources */,
 				2BF9101627B9142000324E31 /* ContentView.swift in Sources */,
 				2BF9101427B9142000324E31 /* PictopiaApp.swift in Sources */,
 				2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */,
+				53DCA8C327BD440D00747270 /* Discover.swift in Sources */,
+				53DCA8C027BD43B400747270 /* Objects.swift in Sources */,
 				2BDA997F27B94E6800FF593C /* SearchPage.swift in Sources */,
-				2BDA997D27B94E3A00FF593C /* Discover.swift in Sources */,
 				2BBD274527BA5A4A00FA5C07 /* CloudKitUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
