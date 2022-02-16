@@ -13,16 +13,29 @@ struct Discover: View {
     
     let spacing:CGFloat = 10
     @State private var number = 1
+    @State private var tag = "composition"
     @StateObject var challenges = Challenges()
     
     var body: some View {
+        GeometryReader{ reader in
         let columns = Array(
             repeating: GridItem(.flexible(), spacing: spacing), count: number)
-        ZStack{
+       
+            NavigationView {
+        ScrollView(showsIndicators: false){
             VStack(spacing: 0){
-                ScrollView(.horizontal){
+                
+                VStack{
+                    Text("Most Recent")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .padding([.top, .leading])
+                }
+                .frame(width: reader.size.width, alignment: .leading)
+                
+                ScrollView(.horizontal,showsIndicators: false){
                     LazyHGrid(rows: columns, spacing: spacing){
-                            ForEach(challenges.allchallenges.filter { $0.category.contains("composition")}){ item in
+                            ForEach(challenges.allchallenges.filter { $0.category.contains(tag)}){ item in
                                 Button(action: {
 
                                 }){
@@ -34,14 +47,18 @@ struct Discover: View {
 
                     }
                     .padding(.horizontal)
-                    .padding(.vertical
-                    )
+                    .padding(.vertical)
                 }
+
             }
             
+            
         }
-        
+        .navigationTitle("Discover")
+        }
+            
     }
+}
 }
                                 
 struct ItemView: View {
@@ -56,21 +73,25 @@ struct ItemView: View {
             ZStack{
                 Image(item.image)
                     .resizable()
+                    .mask(
+                        LinearGradient(gradient: Gradient(colors: [.clear, .black]), startPoint: .bottom, endPoint: .top)
+                    )
                     .scaledToFill()
                     .cornerRadius(10)
                     .frame(width: imageWidth)
-                Text (item.name)
-                    .font(.body)
-                    .fontWeight(.medium)
-                    .foregroundColor(Color.white)
+                    .overlay(
+                        Text (item.name)
+                                .font(.headline)
+                                .fontWeight(.bold)
+                            .foregroundColor(Color.white)
+                        , alignment: .bottomLeading
+                    )
             }
             .frame(width: reader.size.width, height: reader.size.height)
-//            .background(Color.red)
             
         }
-        .frame(width: 180, height: 180)
+        .frame(width: 180, height: 250)
         .clipShape(RoundedRectangle(cornerRadius: 20))
-        .shadow(color: Color.black.opacity(0.2), radius: 20, y: 5)
         
     }
 }
