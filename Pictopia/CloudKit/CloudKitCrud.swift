@@ -51,12 +51,11 @@ class CloudKitCrudViewModel: ObservableObject{
     
     
     private func saveItem(record: CKRecord){
-        CKContainer.default().publicCloudDatabase.save(record){
-            [weak self] returnedRecord, returnedError in
+        CKContainer.default().publicCloudDatabase.save(record){ [weak self] returnedRecord, returnedError in
             print("Record: \(returnedRecord)")
             print("Error: \(returnedError)")
             
-            DispatchQueue.main.async {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 self?.text = ""
                 self?.fetchItems()
             }
