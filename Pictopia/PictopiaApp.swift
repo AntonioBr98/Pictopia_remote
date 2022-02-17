@@ -11,12 +11,12 @@ import SwiftUI
 struct PictopiaApp: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-//                .preferredColorScheme(ColorScheme .dark)
+            ContentView()
+                .preferredColorScheme(ColorScheme .dark)
 //            CloudKitUser()
                 .preferredColorScheme(ColorScheme .dark)
-            CloudKitCrud()
-                .preferredColorScheme(ColorScheme .dark)
+//            CloudKitCrud()
+//                .preferredColorScheme(ColorScheme .dark)
         }
     }
 }

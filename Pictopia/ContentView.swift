@@ -13,7 +13,7 @@ struct ContentView: View {
             
         
         TabView{
-            Discover()
+            TutorialPage()
                 .tabItem {
                     Label("Discover", systemImage: "rectangle.stack.badge.play")
                 }
