@@ -24,6 +24,7 @@
 		53DCA8BE27BD43B400747270 /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BB27BD43B400747270 /* Challenges.swift */; };
 		53DCA8C027BD43B400747270 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BD27BD43B400747270 /* Objects.swift */; };
 		53DCA8C327BD440D00747270 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8C227BD440D00747270 /* Discover.swift */; };
+		EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		53DCA8BB27BD43B400747270 /* Challenges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
 		53DCA8BD27BD43B400747270 /* Objects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Objects.swift; path = ../Objects.swift; sourceTree = "<group>"; };
 		53DCA8C227BD440D00747270 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
+		EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				2BDA997E27B94E6800FF593C /* SearchPage.swift */,
 				2BDA998027B94E7E00FF593C /* ProfilePage.swift */,
 				53DCA8C227BD440D00747270 /* Discover.swift */,
+				EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */,
 				2BF9101727B9142100324E31 /* Assets.xcassets */,
 				2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */,
 				53DCA8C127BD43E200747270 /* Dario+Alba */,
@@ -319,6 +322,7 @@
 				53DCA8BE27BD43B400747270 /* Challenges.swift in Sources */,
 				2BF9101627B9142000324E31 /* ContentView.swift in Sources */,
 				2BF9101427B9142000324E31 /* PictopiaApp.swift in Sources */,
+				EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */,
 				2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */,
 				53DCA8C327BD440D00747270 /* Discover.swift in Sources */,
 				53DCA8C027BD43B400747270 /* Objects.swift in Sources */,

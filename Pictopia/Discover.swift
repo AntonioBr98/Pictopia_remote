@@ -13,11 +13,13 @@ struct Discover: View {
     
     let spacing:CGFloat = 10
     @State private var number = 1
-    @State private var tag = "composition"
+    @State private var tag1 = "composition"
     @StateObject var challenges = Challenges()
     @StateObject var explore = ExploreItems()
+    @State private var nav = false
     
     var body: some View {
+        
         GeometryReader{ reader in
             let columns = Array(
                 repeating: GridItem(.flexible(), spacing: spacing), count: number)
@@ -39,8 +41,11 @@ struct Discover: View {
                             ScrollView(.horizontal,showsIndicators: false){
                                 LazyHGrid(rows: columns, spacing: spacing){
                                     ForEach(challenges.allchallenges.filter { $0.category.contains(expitem.tag)}){ item in
-                                        Button(action: {
-                                        }){
+                                        NavigationLink (destination: Challenge(item: item))
+//                                        Button(action: {
+//                                        nav=true
+//                                        })
+                                        {
                                             ItemView(item: item)
                                         }
                                     }
@@ -57,7 +62,8 @@ struct Discover: View {
             }
             
         }
-    }
+
+}
 }
 
 struct ItemView: View {
