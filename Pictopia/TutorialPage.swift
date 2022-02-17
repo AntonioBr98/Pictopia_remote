@@ -122,7 +122,7 @@ struct TutorialPage: View {
                     .mask(RoundedRectangle(cornerRadius: 20))
                     .offset(y: 300)
             }
-            .navigationTitle("")
+            .navigationTitle("Central Perspective")
             .navigationBarTitleDisplayMode(.inline)
 //            .navigationBarItems(leading:
 //                Button{
@@ -134,7 +134,7 @@ struct TutorialPage: View {
 //                        .font(.title3)
 //                })
             .navigationViewStyle(.columns)
-        
+           
 
     }
     
