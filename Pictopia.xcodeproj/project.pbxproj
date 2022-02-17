@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B00804627BDA8F200038447 /* PhotosSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B00804527BDA8F200038447 /* PhotosSelectViewController.swift */; };
 		2B6292AD27B9249E00C42445 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */; };
 		2BBD274527BA5A4A00FA5C07 /* CloudKitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBD274427BA5A4A00FA5C07 /* CloudKitUser.swift */; };
 		2BBD274927BA5AD200FA5C07 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBD274827BA5AD200FA5C07 /* CloudKit.framework */; };
@@ -42,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2B00804527BDA8F200038447 /* PhotosSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosSelectViewController.swift; sourceTree = "<group>"; };
 		2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		2BBD274427BA5A4A00FA5C07 /* CloudKitUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUser.swift; sourceTree = "<group>"; };
 		2BBD274627BA5A8200FA5C07 /* Pictopia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pictopia.entitlements; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 			children = (
 				2BBD274427BA5A4A00FA5C07 /* CloudKitUser.swift */,
 				2BD97FFD27BBA73100D0EFC4 /* CloudKitCrud.swift */,
-				2B00804527BDA8F200038447 /* PhotosSelectViewController.swift */,
 			);
 			path = CloudKit;
 			sourceTree = "<group>";
@@ -307,7 +304,6 @@
 				2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */,
 				2BDA997F27B94E6800FF593C /* SearchPage.swift in Sources */,
 				2BDA997D27B94E3A00FF593C /* Discover.swift in Sources */,
-				2B00804627BDA8F200038447 /* PhotosSelectViewController.swift in Sources */,
 				2BBD274527BA5A4A00FA5C07 /* CloudKitUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
