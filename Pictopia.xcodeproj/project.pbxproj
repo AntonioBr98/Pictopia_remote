@@ -21,10 +21,22 @@
 		2BF9102527B9142100324E31 /* PictopiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9102427B9142100324E31 /* PictopiaTests.swift */; };
 		2BF9102F27B9142200324E31 /* PictopiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9102E27B9142200324E31 /* PictopiaUITests.swift */; };
 		2BF9103127B9142200324E31 /* PictopiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */; };
+<<<<<<< Updated upstream
 		C61D03F127BE9BA300F1B954 /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61D03F027BE9BA300F1B954 /* TutorialPage.swift */; };
 		C645AD5E27BC641900DBE65C /* ChallengeUploads.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645AD5D27BC641900DBE65C /* ChallengeUploads.swift */; };
 		C6B742D727BDBA1300F3ABEB /* VideoTest.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C6B742D627BDBA1300F3ABEB /* VideoTest.MOV */; };
 		C6B742DE27BDC16300F3ABEB /* ChallengeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B742DD27BDC16300F3ABEB /* ChallengeDetails.swift */; };
+=======
+		5397920727BDA65500DFDDA0 /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397920627BDA65500DFDDA0 /* Explore.swift */; };
+		53DCA8BE27BD43B400747270 /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BB27BD43B400747270 /* Challenges.swift */; };
+		53DCA8C027BD43B400747270 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BD27BD43B400747270 /* Objects.swift */; };
+		53DCA8C327BD440D00747270 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8C227BD440D00747270 /* Discover.swift */; };
+		C61D03FB27BEB18C00F1B954 /* VideoTest.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C61D03FA27BEB18B00F1B954 /* VideoTest.MOV */; };
+		C61D03FD27BEB19F00F1B954 /* ChallengeUploads.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61D03FC27BEB19F00F1B954 /* ChallengeUploads.swift */; };
+		C61D03FF27BEB1A400F1B954 /* ChallengeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61D03FE27BEB1A400F1B954 /* ChallengeDetails.swift */; };
+		EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */; };
+		EEF84B7527BEAF8D00AFAEC0 /* Tutorialpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7427BEAF8D00AFAEC0 /* Tutorialpage.swift */; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +75,22 @@
 		2BF9102A27B9142200324E31 /* PictopiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictopiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF9102E27B9142200324E31 /* PictopiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaUITests.swift; sourceTree = "<group>"; };
 		2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
 		C61D03F027BE9BA300F1B954 /* TutorialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPage.swift; sourceTree = "<group>"; };
 		C645AD5D27BC641900DBE65C /* ChallengeUploads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeUploads.swift; sourceTree = "<group>"; };
 		C6B742D627BDBA1300F3ABEB /* VideoTest.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = VideoTest.MOV; sourceTree = "<group>"; };
 		C6B742DD27BDC16300F3ABEB /* ChallengeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetails.swift; sourceTree = "<group>"; };
+=======
+		5397920627BDA65500DFDDA0 /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
+		53DCA8BB27BD43B400747270 /* Challenges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
+		53DCA8BD27BD43B400747270 /* Objects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Objects.swift; path = ../Objects.swift; sourceTree = "<group>"; };
+		53DCA8C227BD440D00747270 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
+		C61D03FA27BEB18B00F1B954 /* VideoTest.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = VideoTest.MOV; sourceTree = "<group>"; };
+		C61D03FC27BEB19F00F1B954 /* ChallengeUploads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeUploads.swift; sourceTree = "<group>"; };
+		C61D03FE27BEB1A400F1B954 /* ChallengeDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeDetails.swift; sourceTree = "<group>"; };
+		EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		EEF84B7427BEAF8D00AFAEC0 /* Tutorialpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorialpage.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +167,14 @@
 				C645AD5A27BC587800DBE65C /* tutorialAndChallenge */,
 				2BDA997E27B94E6800FF593C /* SearchPage.swift */,
 				2BDA998027B94E7E00FF593C /* ProfilePage.swift */,
+<<<<<<< Updated upstream
+=======
+				53DCA8C227BD440D00747270 /* Discover.swift */,
+				EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */,
+				C61D03FC27BEB19F00F1B954 /* ChallengeUploads.swift */,
+				C61D03FE27BEB1A400F1B954 /* ChallengeDetails.swift */,
+				C61D03FA27BEB18B00F1B954 /* VideoTest.MOV */,
+>>>>>>> Stashed changes
 				2BF9101727B9142100324E31 /* Assets.xcassets */,
 				2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */,
 				2BBD274327BA5A1000FA5C07 /* CloudKit */,
@@ -291,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61D03FB27BEB18C00F1B954 /* VideoTest.MOV in Resources */,
 				2B6292AD27B9249E00C42445 /* Launch Screen.storyboard in Resources */,
 				C6B742D727BDBA1300F3ABEB /* VideoTest.MOV in Resources */,
 				2BF9101B27B9142100324E31 /* Preview Assets.xcassets in Resources */,
@@ -319,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61D03FF27BEB1A400F1B954 /* ChallengeDetails.swift in Sources */,
 				2BD97FFE27BBA73100D0EFC4 /* CloudKitCrud.swift in Sources */,
 				2BF9101627B9142000324E31 /* ContentView.swift in Sources */,
 				C61D03F127BE9BA300F1B954 /* TutorialPage.swift in Sources */,
@@ -326,6 +360,13 @@
 				C645AD5E27BC641900DBE65C /* ChallengeUploads.swift in Sources */,
 				2BF9101427B9142000324E31 /* PictopiaApp.swift in Sources */,
 				2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */,
+<<<<<<< Updated upstream
+=======
+				53DCA8C327BD440D00747270 /* Discover.swift in Sources */,
+				C61D03FD27BEB19F00F1B954 /* ChallengeUploads.swift in Sources */,
+				53DCA8C027BD43B400747270 /* Objects.swift in Sources */,
+				5397920727BDA65500DFDDA0 /* Explore.swift in Sources */,
+>>>>>>> Stashed changes
 				2BDA997F27B94E6800FF593C /* SearchPage.swift in Sources */,
 				2BDA997D27B94E3A00FF593C /* Discover.swift in Sources */,
 				2BBD274527BA5A4A00FA5C07 /* CloudKitUser.swift in Sources */,
@@ -490,7 +531,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pictopia/Preview Content\"";
-				DEVELOPMENT_TEAM = 6NK492Y953;
+				DEVELOPMENT_TEAM = 88Z274NHH6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -504,7 +545,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = braccolino.com.Pictopia;
+				PRODUCT_BUNDLE_IDENTIFIER = ramona.com.Pictopia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -521,7 +562,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pictopia/Preview Content\"";
-				DEVELOPMENT_TEAM = 6NK492Y953;
+				DEVELOPMENT_TEAM = 88Z274NHH6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -535,7 +576,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = braccolino.com.Pictopia;
+				PRODUCT_BUNDLE_IDENTIFIER = ramona.com.Pictopia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
