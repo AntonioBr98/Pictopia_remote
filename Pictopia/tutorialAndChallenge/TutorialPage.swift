@@ -121,7 +121,7 @@ struct TutorialPage: View {
                     .frame(width: 370, height: 55)
                     .background(.quaternary)
                     .mask(RoundedRectangle(cornerRadius: 20))
-                    .offset(y: 260)
+                    .offset(y: 295)
             }
             .navigationTitle("")
             .navigationBarTitleDisplayMode(.inline)
