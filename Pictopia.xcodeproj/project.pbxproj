@@ -25,7 +25,10 @@
 		53DCA8C027BD43B400747270 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BD27BD43B400747270 /* Objects.swift */; };
 		53DCA8C327BD440D00747270 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8C227BD440D00747270 /* Discover.swift */; };
 		EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */; };
-		EEF84B7527BEAF8D00AFAEC0 /* Tutorialpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7427BEAF8D00AFAEC0 /* Tutorialpage.swift */; };
+		EEF84B7A27BEB2C600AFAEC0 /* ChallengeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7627BEB2C600AFAEC0 /* ChallengeDetails.swift */; };
+		EEF84B7B27BEB2C600AFAEC0 /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7727BEB2C600AFAEC0 /* TutorialPage.swift */; };
+		EEF84B7C27BEB2C600AFAEC0 /* VideoTest.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EEF84B7827BEB2C600AFAEC0 /* VideoTest.MOV */; };
+		EEF84B7D27BEB2C600AFAEC0 /* ChallengeUploads.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7927BEB2C600AFAEC0 /* ChallengeUploads.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +71,10 @@
 		53DCA8BD27BD43B400747270 /* Objects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Objects.swift; path = ../Objects.swift; sourceTree = "<group>"; };
 		53DCA8C227BD440D00747270 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
 		EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
-		EEF84B7427BEAF8D00AFAEC0 /* Tutorialpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorialpage.swift; sourceTree = "<group>"; };
+		EEF84B7627BEB2C600AFAEC0 /* ChallengeDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChallengeDetails.swift; path = ../../../../Downloads/ChallengeDetails.swift; sourceTree = "<group>"; };
+		EEF84B7727BEB2C600AFAEC0 /* TutorialPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialPage.swift; path = ../../../../Downloads/TutorialPage.swift; sourceTree = "<group>"; };
+		EEF84B7827BEB2C600AFAEC0 /* VideoTest.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = VideoTest.MOV; path = ../../../../Downloads/VideoTest.MOV; sourceTree = "<group>"; };
+		EEF84B7927BEB2C600AFAEC0 /* ChallengeUploads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChallengeUploads.swift; path = ../../../../Downloads/ChallengeUploads.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +148,11 @@
 				2BF9101327B9142000324E31 /* PictopiaApp.swift */,
 				2BF9101527B9142000324E31 /* ContentView.swift */,
 				2BDA997E27B94E6800FF593C /* SearchPage.swift */,
-				EEF84B7427BEAF8D00AFAEC0 /* Tutorialpage.swift */,
 				2BDA998027B94E7E00FF593C /* ProfilePage.swift */,
+				EEF84B7627BEB2C600AFAEC0 /* ChallengeDetails.swift */,
+				EEF84B7927BEB2C600AFAEC0 /* ChallengeUploads.swift */,
+				EEF84B7727BEB2C600AFAEC0 /* TutorialPage.swift */,
+				EEF84B7827BEB2C600AFAEC0 /* VideoTest.MOV */,
 				53DCA8C227BD440D00747270 /* Discover.swift */,
 				EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */,
 				2BF9101727B9142100324E31 /* Assets.xcassets */,
@@ -294,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF84B7C27BEB2C600AFAEC0 /* VideoTest.MOV in Resources */,
 				2B6292AD27B9249E00C42445 /* Launch Screen.storyboard in Resources */,
 				2BF9101B27B9142100324E31 /* Preview Assets.xcassets in Resources */,
 				2BF9101827B9142100324E31 /* Assets.xcassets in Resources */,
@@ -322,16 +332,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BD97FFE27BBA73100D0EFC4 /* CloudKitCrud.swift in Sources */,
+				EEF84B7A27BEB2C600AFAEC0 /* ChallengeDetails.swift in Sources */,
 				53DCA8BE27BD43B400747270 /* Challenges.swift in Sources */,
 				2BF9101627B9142000324E31 /* ContentView.swift in Sources */,
 				2BF9101427B9142000324E31 /* PictopiaApp.swift in Sources */,
 				EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */,
 				2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */,
 				53DCA8C327BD440D00747270 /* Discover.swift in Sources */,
+				EEF84B7D27BEB2C600AFAEC0 /* ChallengeUploads.swift in Sources */,
 				53DCA8C027BD43B400747270 /* Objects.swift in Sources */,
 				5397920727BDA65500DFDDA0 /* Explore.swift in Sources */,
 				2BDA997F27B94E6800FF593C /* SearchPage.swift in Sources */,
-				EEF84B7527BEAF8D00AFAEC0 /* Tutorialpage.swift in Sources */,
+				EEF84B7B27BEB2C600AFAEC0 /* TutorialPage.swift in Sources */,
 				2BBD274527BA5A4A00FA5C07 /* CloudKitUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,7 +506,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pictopia/Preview Content\"";
-				DEVELOPMENT_TEAM = 6NK492Y953;
+				DEVELOPMENT_TEAM = 3CHT3NMWMV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -525,7 +537,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pictopia/Preview Content\"";
-				DEVELOPMENT_TEAM = 6NK492Y953;
+				DEVELOPMENT_TEAM = 3CHT3NMWMV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

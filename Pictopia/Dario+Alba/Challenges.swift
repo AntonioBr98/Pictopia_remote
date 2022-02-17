@@ -13,12 +13,11 @@ class Challenges: ObservableObject {
     @Published var allchallenges = [Item]()
 
     let composition = Item(name:"Composition", image: "House", level: 2, category: ["Toplvl"])
-    
+    let portrait = Item(name:"Portrait", image: "portrait", level: 2, category: ["composition", "MR", "EC"])
     
     
     let centperspect = Item(name:"Central Perspective", image: "cperspective", level: 2, category: ["Portrait", "MR", "EC"])
     let rulethirds = Item(name:"Rule of Thirds", image: "rthirds", level: 2, category: ["Portrait", "MR", "EC"])
-    let portrait = Item(name:"Portrait", image: "portrait", level: 2, category: ["composition", "MR", "EC"])
     let architectural = Item(name:"Architectural Photography", image: "architectural", level: 2, category: ["composition", "UF"])
     let longexposure = Item(name:"Light Painting", image: "longexposure", level: 2, category: ["lights", "UF", "MR"])
     let bokeh = Item(name:"Effetto Bokeh", image: "bokeh", level: 2, category: ["lights", "UF", "MR"])
