@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct ProfilePage: View {
+    
     var body: some View {
-        Text("Profile,ciaoo")
+            
+        NavigationView {
+            Text("Profile,ciaoo")
+        }
+        .navigationBarTitleDisplayMode(.automatic)
+        .navigationTitle("Profile")
     }
 }
 
