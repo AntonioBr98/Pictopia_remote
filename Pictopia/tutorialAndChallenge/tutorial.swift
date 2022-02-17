@@ -7,7 +7,6 @@
 
 import SwiftUI
 import AVKit
-import UIKit
 
 struct tutorial: View {
     @State var showChallengeUploads: Bool = false
@@ -15,7 +14,7 @@ struct tutorial: View {
     
     
     let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "VideoTest", ofType: "MOV")!))
-    
+        
     var body: some View {
         
         NavigationView{
@@ -24,7 +23,7 @@ struct tutorial: View {
                 VideoPlayer(player: player)
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
-                    
+            
                 NavigationLink(destination: ChallengeUploads(showChallengeUpdates: $showChallengeUploads)) {
 //                  Label name and arrow
                     HStack {
@@ -39,7 +38,7 @@ struct tutorial: View {
                     .frame(width: 370, height: 55)
                     .background(.quaternary)
                     .mask(RoundedRectangle(cornerRadius: 20))
-                    .offset(y: 230)
+                    .offset(y: 260)
             }
             .navigationTitle("")
             .navigationBarTitleDisplayMode(.inline)

@@ -15,28 +15,38 @@ struct ChallengeUploads: View {
     var body: some View {
             
         VStack(alignment: .leading) {
-                Text("Photo Reference")
-                    .font(.title3)
+            Text(firstChallenge.title)
+                    .font(.title)
                     .multilineTextAlignment(.leading)
                 
-                Image("PngLosVigil")
+            Image("PngLosVigil")
                     .resizable()
                     .scaledToFit()
                 
-                Text("Challenge Uploads")
-                    .font(.title3)
+            Text(firstChallenge.secondTitle)
+                    .font(.title)
                     .multilineTextAlignment(.leading)
 
                 
                 LazyVGrid(columns: columns) {
-                    
-                    Text("Placeholder")
-                    Text("Placeholder")
-                    Text("Placeholder")
-                    Text("Placeholder")
-                    Text("Placeholder")
-                    Text("Placeholder")
-
+                    Image("PngLosVigil")
+                        .resizable()
+                        .scaledToFit()
+                    Image("PngLosVigil")
+                        .resizable()
+                        .scaledToFit()
+                    Image("PngLosVigil")
+                        .resizable()
+                        .scaledToFit()
+                    Image("PngLosVigil")
+                        .resizable()
+                        .scaledToFit()
+//                    Image("PngLosVigil")
+//                        .resizable()
+//                        .scaledToFit()
+//                    Image("PngLosVigil")
+//                        .resizable()
+//                        .scaledToFit()
                 }
                 
             }
