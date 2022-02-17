@@ -18,8 +18,8 @@ struct PhotoModel: Hashable{
 class CloudKitCrudViewModel: ObservableObject{
     
     @Published var text: String = ""
-    @Published var photos : [String] = []
-//    @Published var photos : [PhotoModel] = []
+//    @Published var photos : [String] = []
+    @Published var photos : [PhotoModel] = []
     
     init(){
         fetchItems()
@@ -51,14 +51,13 @@ class CloudKitCrudViewModel: ObservableObject{
     
     
     private func saveItem(record: CKRecord){
-        CKContainer.default().publicCloudDatabase.save(record){
-            [weak self] returnedRecord, returnedError in
+        CKContainer.default().publicCloudDatabase.save(record){ [weak self] returnedRecord, returnedError in
             print("Record: \(returnedRecord)")
             print("Error: \(returnedError)")
             
-            DispatchQueue.main.async {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 self?.text = ""
-//                self?.fetchItems()
+                self?.fetchItems()
             }
             
         }
@@ -82,22 +81,22 @@ class CloudKitCrudViewModel: ObservableObject{
         
         
 //        DO IL LIMITE DI QUANTI ELEMENTI VOGLIO FAR APPARIRE A SCHERMO DAL DATABASE, il max è 100
-        queryOperation.resultsLimit = 8
+        queryOperation.resultsLimit = 25
         
         
 //        CREO ARRAY PER TUTTI I STILI CHE HO CREATO
-        var returnedItems: [String] = []
+//        var returnedItems: [String] = []
         
 //        HO CREATO LE PHOTO MODEL QUINDI QUESTO DI SPORA DIVENTA
-//        var returnedItems: [PhotoModel] = []
+        var returnedItems: [PhotoModel] = []
         
         
         queryOperation.recordMatchedBlock = { (returnedRecordID, returnedResult) in
             switch returnedResult {
             case .success(let record):
                 guard let name = record["style"] as? String else {return}
-                returnedItems.append(name)
-//                returnedItems.append(PhotoModel(name: name, record: record))
+//                returnedItems.append(name)
+                returnedItems.append(PhotoModel(name: name, record: record))
                 
 //                QUIIIII ******
 //                record.creationDate
@@ -139,6 +138,21 @@ class CloudKitCrudViewModel: ObservableObject{
     
     
     
+        func deleteItem(indexSet: IndexSet){
+            guard let index = indexSet.first else {return}
+            let photo = photos[index]
+            let record = photo.record
+    
+            CKContainer.default().publicCloudDatabase.delete(withRecordID: record.recordID) { [weak self] returnedRecordID, returnedError in
+                DispatchQueue.main.async {
+                    self?.photos.remove(at: index)
+                }
+    
+            }
+        }
+    
+    
+    
     
 }
 
@@ -157,13 +171,14 @@ struct CloudKitCrud: View {
                 List{
 //                    VM photos perchè è un array
                     ForEach(vm.photos, id: \.self){
-//                        photo in
-                        Text($0)
-//                        Text(photo.name)
-//                            .onTapGesture {
+                        photo in
+//                        Text($0)
+                        Text(photo.name)
+                            .onTapGesture {
 //                                vm.updateItem(photo: photo)
-//                            }
+                            }
                     }
+                    .onDelete(perform: vm.deleteItem)
                     
                 }
                 .listStyle(PlainListStyle())
@@ -223,3 +238,4 @@ extension CloudKitCrud{
 
 
 //NON POSSO INVIARE DIRETTAMENTE LE FOTO A CLOUDKIT, LE DEVO PRIMA CONVERTIRE IN CKASSETS ED INVIARE QUEST ULTIMO
+//aaaa
