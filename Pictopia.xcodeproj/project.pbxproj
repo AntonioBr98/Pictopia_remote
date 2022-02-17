@@ -24,11 +24,11 @@
 		53DCA8BE27BD43B400747270 /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BB27BD43B400747270 /* Challenges.swift */; };
 		53DCA8C027BD43B400747270 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BD27BD43B400747270 /* Objects.swift */; };
 		53DCA8C327BD440D00747270 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8C227BD440D00747270 /* Discover.swift */; };
+		C6C6D3BA27BEE82600984987 /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3B927BEE82600984987 /* TutorialPage.swift */; };
+		C6C6D3BC27BEE8CE00984987 /* ChallengeUploads.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3BB27BEE8CE00984987 /* ChallengeUploads.swift */; };
+		C6C6D3BE27BEE8F400984987 /* ChallengeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */; };
+		C6C6D3C027BEE91F00984987 /* VideoTest.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C6C6D3BF27BEE91F00984987 /* VideoTest.MOV */; };
 		EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */; };
-		EEF84B7A27BEB2C600AFAEC0 /* ChallengeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7627BEB2C600AFAEC0 /* ChallengeDetails.swift */; };
-		EEF84B7B27BEB2C600AFAEC0 /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7727BEB2C600AFAEC0 /* TutorialPage.swift */; };
-		EEF84B7C27BEB2C600AFAEC0 /* VideoTest.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EEF84B7827BEB2C600AFAEC0 /* VideoTest.MOV */; };
-		EEF84B7D27BEB2C600AFAEC0 /* ChallengeUploads.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7927BEB2C600AFAEC0 /* ChallengeUploads.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,11 +70,11 @@
 		53DCA8BB27BD43B400747270 /* Challenges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
 		53DCA8BD27BD43B400747270 /* Objects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Objects.swift; path = ../Objects.swift; sourceTree = "<group>"; };
 		53DCA8C227BD440D00747270 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
+		C6C6D3B927BEE82600984987 /* TutorialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPage.swift; sourceTree = "<group>"; };
+		C6C6D3BB27BEE8CE00984987 /* ChallengeUploads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeUploads.swift; sourceTree = "<group>"; };
+		C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetails.swift; sourceTree = "<group>"; };
+		C6C6D3BF27BEE91F00984987 /* VideoTest.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = VideoTest.MOV; sourceTree = "<group>"; };
 		EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
-		EEF84B7627BEB2C600AFAEC0 /* ChallengeDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChallengeDetails.swift; path = ../../../../Downloads/ChallengeDetails.swift; sourceTree = "<group>"; };
-		EEF84B7727BEB2C600AFAEC0 /* TutorialPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialPage.swift; path = ../../../../Downloads/TutorialPage.swift; sourceTree = "<group>"; };
-		EEF84B7827BEB2C600AFAEC0 /* VideoTest.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = VideoTest.MOV; path = ../../../../Downloads/VideoTest.MOV; sourceTree = "<group>"; };
-		EEF84B7927BEB2C600AFAEC0 /* ChallengeUploads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChallengeUploads.swift; path = ../../../../Downloads/ChallengeUploads.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,10 +149,10 @@
 				2BF9101527B9142000324E31 /* ContentView.swift */,
 				2BDA997E27B94E6800FF593C /* SearchPage.swift */,
 				2BDA998027B94E7E00FF593C /* ProfilePage.swift */,
-				EEF84B7627BEB2C600AFAEC0 /* ChallengeDetails.swift */,
-				EEF84B7927BEB2C600AFAEC0 /* ChallengeUploads.swift */,
-				EEF84B7727BEB2C600AFAEC0 /* TutorialPage.swift */,
-				EEF84B7827BEB2C600AFAEC0 /* VideoTest.MOV */,
+				C6C6D3B927BEE82600984987 /* TutorialPage.swift */,
+				C6C6D3BB27BEE8CE00984987 /* ChallengeUploads.swift */,
+				C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */,
+				C6C6D3BF27BEE91F00984987 /* VideoTest.MOV */,
 				53DCA8C227BD440D00747270 /* Discover.swift */,
 				EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */,
 				2BF9101727B9142100324E31 /* Assets.xcassets */,
@@ -303,8 +303,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEF84B7C27BEB2C600AFAEC0 /* VideoTest.MOV in Resources */,
 				2B6292AD27B9249E00C42445 /* Launch Screen.storyboard in Resources */,
+				C6C6D3C027BEE91F00984987 /* VideoTest.MOV in Resources */,
 				2BF9101B27B9142100324E31 /* Preview Assets.xcassets in Resources */,
 				2BF9101827B9142100324E31 /* Assets.xcassets in Resources */,
 			);
@@ -332,18 +332,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BD97FFE27BBA73100D0EFC4 /* CloudKitCrud.swift in Sources */,
-				EEF84B7A27BEB2C600AFAEC0 /* ChallengeDetails.swift in Sources */,
+				C6C6D3BA27BEE82600984987 /* TutorialPage.swift in Sources */,
 				53DCA8BE27BD43B400747270 /* Challenges.swift in Sources */,
 				2BF9101627B9142000324E31 /* ContentView.swift in Sources */,
 				2BF9101427B9142000324E31 /* PictopiaApp.swift in Sources */,
 				EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */,
 				2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */,
 				53DCA8C327BD440D00747270 /* Discover.swift in Sources */,
-				EEF84B7D27BEB2C600AFAEC0 /* ChallengeUploads.swift in Sources */,
+				C6C6D3BE27BEE8F400984987 /* ChallengeDetails.swift in Sources */,
 				53DCA8C027BD43B400747270 /* Objects.swift in Sources */,
 				5397920727BDA65500DFDDA0 /* Explore.swift in Sources */,
+				C6C6D3BC27BEE8CE00984987 /* ChallengeUploads.swift in Sources */,
 				2BDA997F27B94E6800FF593C /* SearchPage.swift in Sources */,
-				EEF84B7B27BEB2C600AFAEC0 /* TutorialPage.swift in Sources */,
 				2BBD274527BA5A4A00FA5C07 /* CloudKitUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
