@@ -12,6 +12,6 @@ struct Item: Identifiable {
     let id = UUID()
     let name: String
     let image: String
-    let level: Int
+    let active: Int
     let category: [String]
 }

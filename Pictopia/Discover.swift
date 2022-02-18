@@ -11,7 +11,7 @@ import SwiftUI
 
 struct Discover: View {
     
-    let spacing:CGFloat = 10
+    let spacing:CGFloat = 15
     @State private var number = 1
     @State private var tag1 = "composition"
     @StateObject var challenges = Challenges()
@@ -47,6 +47,11 @@ struct Discover: View {
 //                                        })
                                         {
                                             ItemView(item: item)
+//                                                .mask(
+//                                                    Text("SWIFT!")
+//                                                        .font(.system(size: 40))
+//                                                        .fontWeight(.heavy)
+//                                                    )
                                         }
                                     }
                                     
@@ -75,6 +80,38 @@ struct ItemView: View {
             
             let imageWidth: CGFloat = min(180, reader.size.width * 0.6)
             
+            if item.active==2 {
+            
+            ZStack{
+                Image(item.image)
+                    .resizable()
+                    .mask(
+                        ZStack{
+                            Color.black.opacity(0.4)
+                       Text("COMING SOON")
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
+                        }
+                    )
+//                    .background(Color.white)
+                    .scaledToFill()
+                    .cornerRadius(10)
+                    .frame(width: imageWidth)
+                    .overlay(
+                        Text (item.name)
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.white)
+                            .multilineTextAlignment(.leading)
+                            .padding(.bottom)
+                        , alignment: .bottomLeading
+                    )
+            }
+            .frame(width: reader.size.width, height: reader.size.height)
+            }
+            else {
+            
             ZStack{
                 Image(item.image)
                     .resizable()
@@ -86,14 +123,16 @@ struct ItemView: View {
                     .frame(width: imageWidth)
                     .overlay(
                         Text (item.name)
-                            .font(.headline)
+                            .font(.subheadline)
                             .fontWeight(.semibold)
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.leading)
+                            .padding(.bottom)
                         , alignment: .bottomLeading
                     )
             }
             .frame(width: reader.size.width, height: reader.size.height)
+            }
             
         }
         .frame(width: 160, height: 200)
