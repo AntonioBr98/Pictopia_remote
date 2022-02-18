@@ -37,7 +37,7 @@ class Challenges: ObservableObject {
     
 //    CHALLENGES
     
-    let centperspect = Item(name:"Central Perspective", image: "cperspective", active: 2, category: ["composition"])
+    let centperspect = Item(name:"Central Perspective", image: "cperspective", active: 2, category: [])
     let rulethirds = Item(name:"Rule of Thirds", image: "rthirds", active: 2, category: ["composition"])
     let longexposure = Item(name:"Light Painting", image: "longexposure", active: 2, category: ["lights"])
     let bokeh = Item(name:"Effetto Bokeh", image: "bokeh", active: 2, category: ["lights"])

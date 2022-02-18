@@ -20,6 +20,7 @@
 		2BF9102527B9142100324E31 /* PictopiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9102427B9142100324E31 /* PictopiaTests.swift */; };
 		2BF9102F27B9142200324E31 /* PictopiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9102E27B9142200324E31 /* PictopiaUITests.swift */; };
 		2BF9103127B9142200324E31 /* PictopiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */; };
+		537DA90C27BFFC360045B376 /* VideoTest.mov in Resources */ = {isa = PBXBuildFile; fileRef = 537DA90B27BFFC350045B376 /* VideoTest.mov */; };
 		5397920727BDA65500DFDDA0 /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397920627BDA65500DFDDA0 /* Explore.swift */; };
 		53DCA8BE27BD43B400747270 /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BB27BD43B400747270 /* Challenges.swift */; };
 		53DCA8C027BD43B400747270 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BD27BD43B400747270 /* Objects.swift */; };
@@ -27,7 +28,6 @@
 		C6C6D3BA27BEE82600984987 /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3B927BEE82600984987 /* TutorialPage.swift */; };
 		C6C6D3BC27BEE8CE00984987 /* ChallengeUploads.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3BB27BEE8CE00984987 /* ChallengeUploads.swift */; };
 		C6C6D3BE27BEE8F400984987 /* ChallengeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */; };
-		C6C6D3C027BEE91F00984987 /* VideoTest.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C6C6D3BF27BEE91F00984987 /* VideoTest.MOV */; };
 		EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +66,7 @@
 		2BF9102A27B9142200324E31 /* PictopiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictopiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF9102E27B9142200324E31 /* PictopiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaUITests.swift; sourceTree = "<group>"; };
 		2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		537DA90B27BFFC350045B376 /* VideoTest.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = VideoTest.mov; sourceTree = "<group>"; };
 		5397920627BDA65500DFDDA0 /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
 		53DCA8BB27BD43B400747270 /* Challenges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
 		53DCA8BD27BD43B400747270 /* Objects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Objects.swift; path = ../Objects.swift; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		C6C6D3B927BEE82600984987 /* TutorialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPage.swift; sourceTree = "<group>"; };
 		C6C6D3BB27BEE8CE00984987 /* ChallengeUploads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeUploads.swift; sourceTree = "<group>"; };
 		C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetails.swift; sourceTree = "<group>"; };
-		C6C6D3BF27BEE91F00984987 /* VideoTest.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = VideoTest.MOV; sourceTree = "<group>"; };
 		C6C6D3C127BF0AE900984987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,7 +156,7 @@
 				C6C6D3B927BEE82600984987 /* TutorialPage.swift */,
 				C6C6D3BB27BEE8CE00984987 /* ChallengeUploads.swift */,
 				C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */,
-				C6C6D3BF27BEE91F00984987 /* VideoTest.MOV */,
+				537DA90B27BFFC350045B376 /* VideoTest.mov */,
 				2BF9101727B9142100324E31 /* Assets.xcassets */,
 				2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */,
 				53DCA8C127BD43E200747270 /* Dario+Alba */,
@@ -306,8 +306,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B6292AD27B9249E00C42445 /* Launch Screen.storyboard in Resources */,
-				C6C6D3C027BEE91F00984987 /* VideoTest.MOV in Resources */,
 				2BF9101B27B9142100324E31 /* Preview Assets.xcassets in Resources */,
+				537DA90C27BFFC360045B376 /* VideoTest.mov in Resources */,
 				2BF9101827B9142100324E31 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
