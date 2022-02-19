@@ -65,6 +65,39 @@ struct HItemView: View {
             
             let imageWidth: CGFloat = reader.size.width
             
+            if item.active==2 {
+            
+            ZStack{
+                Image(item.image)
+                    .resizable()
+                    .mask(
+                        ZStack{
+                            Color.black.opacity(0.4)
+                       Text("COMING SOON")
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
+                        }
+                    )
+                    .scaledToFill()
+                    .cornerRadius(10)
+                    .frame(width: imageWidth)
+
+            }
+            .frame(width: reader.size.width, height: reader.size.height)
+            .overlay(
+                Text (item.name)
+                    .font(.title3)
+                    .fontWeight(.regular)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.leading)
+                    .padding([.top, .leading])
+                , alignment: .topLeading
+            )
+            }
+//            here
+            else {
+            
             ZStack{
                 Image(item.image)
                     .resizable()
@@ -94,6 +127,8 @@ struct HItemView: View {
                     .padding([.top, .leading])
                 , alignment: .topLeading
             )
+            }
+//            here
             
         }
         .frame(height: 120)
