@@ -115,8 +115,20 @@ struct ItemView: View {
             ZStack{
                 Image(item.image)
                     .resizable()
-                    .mask(
-                        LinearGradient(gradient: Gradient(colors: [.clear, .black]), startPoint: .bottom, endPoint: .top)
+                    .overlay(
+                        LinearGradient(gradient: Gradient(colors: [.clear, .black.opacity(0.8)]), startPoint: .top, endPoint: .bottom)
+//                        prova
+//                        LinearGradient(
+//                                gradient: Gradient(stops: [
+//                                    Gradient.Stop(color: .black, location: 0.7),
+//                                    Gradient.Stop(color: .black.opacity(0.3), location: 0.3)
+//                                ]),
+//                                startPoint: .top,
+//                                endPoint: .bottom)
+                        
+//                        fine prova
+                        
+                        
                     )
                     .scaledToFill()
                     .cornerRadius(10)

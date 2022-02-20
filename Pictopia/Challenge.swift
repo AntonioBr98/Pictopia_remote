@@ -25,13 +25,13 @@ struct Challenge: View {
                     
                         
                         VStack(spacing: 0){
-//                            VStack{
-//                                Text("Challenges")
-//                                    .font(.title)
-//                                    .fontWeight(.semibold)
-//                                    .padding([.top, .leading])
-//                            }
-//                            .frame(width: reader.size.width, alignment: .leading)
+                            VStack{
+                                Text("Challenges")
+                                    .font(.title)
+                                    .fontWeight(.semibold)
+                                    .padding([.top, .leading])
+                            }
+                            .frame(width: reader.size.width, alignment: .leading)
                             
                             ScrollView(showsIndicators: false){
                                 LazyVGrid(columns: columns, spacing: spacing){
@@ -49,7 +49,7 @@ struct Challenge: View {
                             
                         }
                 }
-                .navigationTitle("Challenges")
+                .navigationTitle(item.name)
 
             
         }
