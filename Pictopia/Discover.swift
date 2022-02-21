@@ -2,7 +2,7 @@
 //  Discover.swift
 //  Pictopia
 //
-//  Created by Antonio Braccolino on 13/02/22.
+//  Created by Alba Capasso on 13/02/22.
 //
 
 import SwiftUI

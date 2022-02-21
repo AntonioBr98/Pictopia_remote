@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchPage: View {
     var body: some View {
-        
+
         NavigationView {
             Text("WORK IN PROGRESS")
                 .font(.title)
@@ -21,6 +21,7 @@ struct SearchPage: View {
         }
     }
 }
+
 
 struct SearchPage_Previews: PreviewProvider {
     static var previews: some View {
