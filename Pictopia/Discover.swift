@@ -40,7 +40,7 @@ struct Discover: View {
                             
                             ScrollView(.horizontal,showsIndicators: false){
                                 LazyHGrid(rows: columns, spacing: spacing){
-                                    ForEach(challenges.allchallenges.filter { $0.category.contains(expitem.tag)}){ item in
+                                    ForEach(challenges.alltopics.filter { $0.category.contains(expitem.tag)}){ item in
                                         NavigationLink (destination: Challenge(item: item))
 //                                        Button(action: {
 //                                        nav=true

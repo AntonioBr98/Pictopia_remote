@@ -10,6 +10,7 @@ import SwiftUI
 
 class Challenges: ObservableObject {
     
+    @Published var alltopics = [Item]()
     @Published var allchallenges = [Item]()
     
 //    TOPIC
@@ -44,7 +45,8 @@ class Challenges: ObservableObject {
 
     init() {
 
-        self.allchallenges = [composition,lights,portrait,photobasics,bandw,macro,streetph,architectural,lighteffects,food,abstract,landscape,colors,sport,nature,fashion,wedding,documentary,lenses,rulethirds,centperspect,longexposure,bokeh]
+        self.alltopics = [composition,lights,portrait,photobasics,bandw,macro,streetph,architectural,lighteffects,food,abstract,landscape,colors,sport,nature,fashion,wedding,documentary,lenses]
+        self.allchallenges = [rulethirds,centperspect,longexposure,bokeh]
 
     }
     

@@ -2,25 +2,257 @@
 //  SearchPage.swift
 //  Pictopia
 //
-//  Created by Antonio Braccolino on 13/02/22.
+//  Created by Dario Vigilante on 21/02/22.
 //
 
 import SwiftUI
 
+
+
+
+
+
 struct SearchPage: View {
+    
+    let spacing:CGFloat = 15
+    @State private var number = 1
+    @State private var searchText = ""
+    @StateObject var challenges = Challenges()
+    @StateObject var explore = ExploreItems()
+    @State private var nav = false
+    
     var body: some View {
+        
+        GeometryReader{ reader in
+            let columns = Array(
+                repeating: GridItem(.flexible(), spacing: spacing), count: 2)
+            let rows = Array(
+                repeating: GridItem(.flexible(), spacing: spacing), count: number)
+            
+            NavigationView {
+                
+                VStack{
 
-        NavigationView {
-            Text("WORK IN PROGRESS")
-                .font(.title)
-                .fontWeight(.heavy)
-                .foregroundColor(Color(hue: 1.0, saturation: 0.0, brightness: 0.32))
-                .multilineTextAlignment(.center)
+                    ScrollView(showsIndicators: false){
+                        VStack{
+                        Text("Topics")
+//                             for \(searchText)")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .padding([.top, .leading])
+                    }
+                    .frame(width: reader.size.width, alignment: .leading)
+                            
+                            
+                            ScrollView(.horizontal,showsIndicators: false){
+                                LazyHGrid(rows: rows, spacing: spacing){
+                                    if searchText != "" {
+                                    ForEach(challenges.alltopics.filter { $0.name.contains(searchText)}){ item in
+                                        NavigationLink (destination: Challenge(item: item)){
+                                            SearchTopicItemView(item: item)
+                                        }
+                                    }
+                                    }
+                                    else {
+                                        ForEach(challenges.alltopics){ item in
+                                            NavigationLink (destination: Challenge(item: item))
+                                            {
+                                                SearchTopicItemView(item: item)
+                                            }
+                                        }
+                                    }
+                                }
+                                .padding(.horizontal)
+
+                            }
+
+                            VStack{
+                            Text("Challenges")
+//                                 for \(searchText)")
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                                .padding([.top, .leading])
+                        }
+                        .frame(width: reader.size.width, alignment: .leading)
+                            
+                                LazyVGrid(columns: columns, spacing: spacing){
+                                    if searchText != "" {
+                                    ForEach(challenges.allchallenges.filter { $0.name.contains(searchText)}){ item in
+                                        NavigationLink (destination: TutorialPage())
+                                         { SearchChallengeItemView(item: item)   }
+                                    }
+                                    }
+                                    else {
+                                        ForEach(challenges.allchallenges){ item in
+                                            NavigationLink (destination: TutorialPage())
+                                            {
+                                                SearchChallengeItemView(item: item)
+                                            }
+                                        }
+                                    }
+                                }
+                                .padding(.horizontal)
+
+                        }
+
+                }
                 .navigationTitle("Search")
-
+                
+            }
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Type to search topics or challenges")
+            
         }
+
+}
+}
+
+struct SearchTopicItemView: View {
+    
+    let item:Item
+    var body: some View {
+        
+        GeometryReader{ reader in
+            
+            let imageWidth: CGFloat = min(180, reader.size.width * 0.6)
+            
+            if item.active==2 {
+            
+            ZStack{
+                Image(item.image)
+                    .resizable()
+                    .mask(
+                        ZStack{
+                            Color.black.opacity(0.4)
+                       Text("COMING SOON")
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
+                        }
+                    )
+                    .scaledToFill()
+                    .cornerRadius(10)
+                    .frame(width: imageWidth)
+                    .overlay(
+                        Text (item.name)
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.white)
+                            .multilineTextAlignment(.leading)
+                            .padding(.bottom)
+                        , alignment: .bottomLeading
+                    )
+            }
+            .frame(width: reader.size.width, height: reader.size.height)
+            }
+            else {
+            
+            ZStack{
+                Image(item.image)
+                    .resizable()
+                    .overlay(
+                        LinearGradient(gradient: Gradient(colors: [.clear, .black.opacity(0.8)]), startPoint: .top, endPoint: .bottom)
+                    )
+                    .scaledToFill()
+                    .cornerRadius(10)
+                    .frame(width: imageWidth)
+                    .overlay(
+                        Text (item.name)
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.white)
+                            .multilineTextAlignment(.leading)
+                            .padding(.bottom)
+                        , alignment: .bottomLeading
+                    )
+            }
+            .frame(width: reader.size.width, height: reader.size.height)
+            }
+            
+        }
+        .frame(width: 160, height: 200)
+        .clipShape(RoundedRectangle(cornerRadius: 20))
+        
     }
 }
+
+
+struct SearchChallengeItemView: View {
+    
+    let item:Item
+    var body: some View {
+        
+        GeometryReader{ reader in
+            
+            let imageWidth: CGFloat = reader.size.width
+            
+            if item.active==2 {
+            
+            ZStack{
+                Image(item.image)
+                    .resizable()
+                    .mask(
+                        ZStack{
+                            Color.black.opacity(0.4)
+                       Text("COMING SOON")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
+                        }
+                    )
+                    .scaledToFill()
+                    .cornerRadius(10)
+                    .frame(width: imageWidth)
+
+            }
+            .frame(width: reader.size.width, height: reader.size.height)
+            .overlay(
+                Text (item.name)
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.leading)
+                    .padding([.top, .leading])
+                , alignment: .topLeading
+            )
+            }
+            else {
+                
+                VStack{
+            ZStack{
+                Image(item.image)
+                    .resizable()
+                  .mask(
+                    LinearGradient(
+                            gradient: Gradient(stops: [
+                                Gradient.Stop(color: .black.opacity(0.5), location: 0.5),
+                                Gradient.Stop(color: .black, location: 0.5)
+                            ]),
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing)
+                  )
+                    .scaledToFill()
+                    .cornerRadius(10)
+                    .frame(width: imageWidth)
+
+            }
+            .frame(width: reader.size.width, height: reader.size.height)
+               
+                    Text (item.name)
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.leading)
+                    .padding([.top, .leading])
+                    }
+            }
+            
+        }
+        .frame(height: 80)
+        .clipShape(RoundedRectangle(cornerRadius: 20))
+        
+    }
+}
+
 
 
 struct SearchPage_Previews: PreviewProvider {
