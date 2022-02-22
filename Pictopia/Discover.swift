@@ -10,6 +10,7 @@ import SwiftUI
 
 
 struct Discover: View {
+    @State var showOnboarding: Bool = true
     
     let spacing:CGFloat = 15
     @State private var number = 1
@@ -65,6 +66,7 @@ struct Discover: View {
                 }
                 .navigationTitle("Discover")
             }
+            .fullScreenCover(isPresented: $showOnboarding, content: { OnboardingView(showOnboarding: $showOnboarding)})
             
         }
 

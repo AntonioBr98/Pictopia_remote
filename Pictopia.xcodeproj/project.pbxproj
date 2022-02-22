@@ -28,6 +28,7 @@
 		C6C6D3BA27BEE82600984987 /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3B927BEE82600984987 /* TutorialPage.swift */; };
 		C6C6D3BC27BEE8CE00984987 /* ChallengeUploads.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3BB27BEE8CE00984987 /* ChallengeUploads.swift */; };
 		C6C6D3BE27BEE8F400984987 /* ChallengeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */; };
+		C6D2D7C027C56E2800AA6529 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D2D7BF27C56E2800AA6529 /* OnboardingView.swift */; };
 		EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		C6C6D3BB27BEE8CE00984987 /* ChallengeUploads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeUploads.swift; sourceTree = "<group>"; };
 		C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetails.swift; sourceTree = "<group>"; };
 		C6C6D3C127BF0AE900984987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C6D2D7BF27C56E2800AA6529 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,6 +158,7 @@
 				C6C6D3B927BEE82600984987 /* TutorialPage.swift */,
 				C6C6D3BB27BEE8CE00984987 /* ChallengeUploads.swift */,
 				C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */,
+				C6D2D7BF27C56E2800AA6529 /* OnboardingView.swift */,
 				537DA90B27BFFC350045B376 /* VideoTest.mov */,
 				2BF9101727B9142100324E31 /* Assets.xcassets */,
 				2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */,
@@ -336,6 +339,7 @@
 				2BD97FFE27BBA73100D0EFC4 /* CloudKitCrud.swift in Sources */,
 				C6C6D3BA27BEE82600984987 /* TutorialPage.swift in Sources */,
 				53DCA8BE27BD43B400747270 /* Challenges.swift in Sources */,
+				C6D2D7C027C56E2800AA6529 /* OnboardingView.swift in Sources */,
 				2BF9101627B9142000324E31 /* ContentView.swift in Sources */,
 				2BF9101427B9142000324E31 /* PictopiaApp.swift in Sources */,
 				EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */,
