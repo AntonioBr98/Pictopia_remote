@@ -13,37 +13,40 @@ struct OnboardingView: View {
     
     var body: some View {
         
-        TabView {
-            
-//       Onboarding
-            PageView(
-                imageName: "onboard1",
-                title: "Dive \nyourself \ninto photography!", showsDismissButton: false, showOnboarding: $showOnboarding
-                )
-
-            
-            PageView(
-                imageName: "onboard2", title: "Choose one of the tutorials available in the Discover page and start learning.", showsDismissButton: false, showOnboarding: $showOnboarding
-                )
-            
-
-            PageView(
-                imageName: "onboard3",
-                title: "Join the \nchallenge by \nuploading yuor photo", showsDismissButton: true, showOnboarding: $showOnboarding
-                )
-            
+        NavigationView {
+            TabView {
                 
+    //       Onboarding
+                PageView(
+                    imageName: "onboard1",
+                    title: "Dive \nyourself \ninto photography!", showsDismissButton: false, showOnboarding: $showOnboarding
+                    )
+                    .padding(.bottom, 100)
+
                 
-            }
-        .navigationBarTitleDisplayMode(.inline)
-                .edgesIgnoringSafeArea(.bottom)
-        //      Skip button
-                .navigationBarItems(trailing:
-                        Button("Skip") {
-                        showOnboarding.toggle()
-        //                HomeView()
-                        })
-                .tabViewStyle(.page(indexDisplayMode: .always))
+                PageView(
+                    imageName: "onboard2", title: "Choose one of the tutorials available in the Discover page and start learning.", showsDismissButton: false, showOnboarding: $showOnboarding
+                    )
+                    .padding(.bottom, 100)
+
+                
+
+                PageView(
+                    imageName: "onboard3",
+                    title: "Join the \nchallenge by \nuploading yuor photo", showsDismissButton: true, showOnboarding: $showOnboarding
+                    )
+                    .padding(.bottom, 100)
+
+                    
+                }
+            .tabViewStyle(.page(indexDisplayMode: .always))
+                    .edgesIgnoringSafeArea(.bottom)
+            //      Skip button
+                    .navigationBarItems(trailing:
+                            Button("Skip") {
+                            showOnboarding.toggle()
+                })
+        }
         }
     }
 
