@@ -32,7 +32,6 @@ struct SearchPage: View {
             NavigationView {
                 
                 VStack{
-
                     ScrollView(showsIndicators: false){
                         VStack{
                         Text("Topics")
@@ -42,7 +41,6 @@ struct SearchPage: View {
                             .padding([.top, .leading])
                     }
                     .frame(width: reader.size.width, alignment: .leading)
-                            
                             
                             ScrollView(.horizontal,showsIndicators: false){
                                 LazyHGrid(rows: rows, spacing: spacing){
@@ -92,15 +90,12 @@ struct SearchPage: View {
                                     }
                                 }
                                 .padding(.horizontal)
-
                         }
 
                 }
                 .navigationTitle("Search")
-                
             }
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Type to search topics or challenges")
-            
         }
 
 }
@@ -185,50 +180,20 @@ struct SearchChallengeItemView: View {
             
             let imageWidth: CGFloat = reader.size.width
             
-            if item.active==2 {
-            
-            ZStack{
-                Image(item.image)
-                    .resizable()
-                    .mask(
-                        ZStack{
-                            Color.black.opacity(0.4)
-                       Text("COMING SOON")
-                        .font(.title2)
-                        .fontWeight(.semibold)
-                        .multilineTextAlignment(.center)
-                        }
-                    )
-                    .scaledToFill()
-                    .cornerRadius(10)
-                    .frame(width: imageWidth)
-
-            }
-            .frame(width: reader.size.width, height: reader.size.height)
-            .overlay(
-                Text (item.name)
-                    .font(.subheadline)
-                    .fontWeight(.semibold)
-                    .foregroundColor(Color.white)
-                    .multilineTextAlignment(.leading)
-                    .padding([.top, .leading])
-                , alignment: .topLeading
-            )
-            }
-            else {
-                
                 VStack{
             ZStack{
                 Image(item.image)
                     .resizable()
-                  .mask(
-                    LinearGradient(
-                            gradient: Gradient(stops: [
-                                Gradient.Stop(color: .black.opacity(0.5), location: 0.5),
-                                Gradient.Stop(color: .black, location: 0.5)
-                            ]),
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing)
+                    .mask(
+                        RadialGradient(gradient: Gradient(colors: [.black, .black.opacity(0.5)]), center: .center, startRadius: 0, endRadius: 50)
+                                    )
+                  .overlay(
+                      Text (item.name)
+                          .font(.subheadline)
+                          .fontWeight(.semibold)
+                          .foregroundColor(Color.white)
+                          .multilineTextAlignment(.leading)
+                      , alignment: .center
                   )
                     .scaledToFill()
                     .cornerRadius(10)
@@ -242,9 +207,9 @@ struct SearchChallengeItemView: View {
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.leading)
-                    .padding([.top, .leading])
+//                    .padding([.top, .leading])
                     }
-            }
+
             
         }
         .frame(height: 80)
