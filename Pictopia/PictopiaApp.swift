@@ -15,7 +15,12 @@ struct PictopiaApp: App {
 //                .preferredColorScheme(ColorScheme .dark)
 //            CloudKitUser()
 //                .preferredColorScheme(ColorScheme .dark)
+<<<<<<< Updated upstream
             CloudKitCrud()
+=======
+//            CloudKitCrud()
+            SignIn()
+>>>>>>> Stashed changes
                 .preferredColorScheme(ColorScheme .dark)
         }
     }
