@@ -29,6 +29,7 @@
 		C6C6D3BC27BEE8CE00984987 /* ChallengeUploads.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3BB27BEE8CE00984987 /* ChallengeUploads.swift */; };
 		C6C6D3BE27BEE8F400984987 /* ChallengeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */; };
 		C6D2D7C027C56E2800AA6529 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D2D7BF27C56E2800AA6529 /* OnboardingView.swift */; };
+		EED6897B27C67392004C17C5 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED6897A27C67392004C17C5 /* SignIn.swift */; };
 		EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetails.swift; sourceTree = "<group>"; };
 		C6C6D3C127BF0AE900984987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C6D2D7BF27C56E2800AA6529 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		EED6897A27C67392004C17C5 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,6 +199,7 @@
 		53DCA8C127BD43E200747270 /* Dario+Alba */ = {
 			isa = PBXGroup;
 			children = (
+				EED6897A27C67392004C17C5 /* SignIn.swift */,
 				53DCA8BB27BD43B400747270 /* Challenges.swift */,
 				53DCA8BD27BD43B400747270 /* Objects.swift */,
 				5397920627BDA65500DFDDA0 /* Explore.swift */,
@@ -351,6 +354,7 @@
 				C6C6D3BC27BEE8CE00984987 /* ChallengeUploads.swift in Sources */,
 				2BDA997F27B94E6800FF593C /* SearchPage.swift in Sources */,
 				2BBD274527BA5A4A00FA5C07 /* CloudKitUser.swift in Sources */,
+				EED6897B27C67392004C17C5 /* SignIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,7 +516,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pictopia/Preview Content\"";
-				DEVELOPMENT_TEAM = 3WT3VGS745;
+				DEVELOPMENT_TEAM = 3CHT3NMWMV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pictopia/Info.plist;
@@ -546,7 +550,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pictopia/Preview Content\"";
-				DEVELOPMENT_TEAM = 3WT3VGS745;
+				DEVELOPMENT_TEAM = 3CHT3NMWMV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pictopia/Info.plist;
