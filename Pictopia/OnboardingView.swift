@@ -25,7 +25,7 @@ struct OnboardingView: View {
 
                 
                 PageView(
-                    imageName: "onboard2", title: "Choose one of the tutorials available in the Discover page and start learning.", showsDismissButton: false, showOnboarding: $showOnboarding
+                    imageName: "onboard2", title: "Choose one of the tutorials available in the Discover page and start learning", showsDismissButton: false, showOnboarding: $showOnboarding
                     )
                     .padding(.bottom, 100)
 

@@ -91,9 +91,9 @@ struct SearchPage: View {
                                 }
                                 .padding(.horizontal)
                         }
-
                 }
                 .navigationTitle("Search")
+                
             }
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Type to search topics or challenges")
         }
