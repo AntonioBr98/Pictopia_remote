@@ -1,10 +1,10 @@
+//////
+//////  CloudKitUser.swift
+//////  Pictopia
+//////
+//////  Created by Antonio Braccolino on 14/02/22.
+//////
 ////
-////  CloudKitUser.swift
-////  Pictopia
-////
-////  Created by Antonio Braccolino on 14/02/22.
-////
-//
 //import SwiftUI
 //import CloudKit
 //

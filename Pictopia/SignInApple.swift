@@ -42,6 +42,7 @@ struct SignInApple: View {
 // Sign in button view
 
 struct SignInButtonView: View {
+
     
     // To support the color of the button based on the appearance observing the colorScheme
     @Environment(\.colorScheme) var colorScheme
@@ -106,6 +107,37 @@ struct SignInButtonView: View {
     }
 }
 
+struct ProfilePage: View {
+    
+    // Samples
+    @AppStorage ("email") var email: String = ""
+    @AppStorage ("firstName") var firstName: String = ""
+    @AppStorage ("lastName") var lastName: String = ""
+    @AppStorage ("userId") var userId: String = ""
+
+    var body: some View {
+            VStack {
+                Image(systemName: "person.crop.circle")
+                    .scaleEffect(5)
+                    .frame(width: 85, height: 85, alignment: .center)
+                    .padding()
+                
+                Text(userId)
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .padding(.bottom)
+                
+                List {
+                    Text("Joined Challenges - NOT WORKING")
+                    Text("Badges - NOT WORKING")
+
+                }
+                .navigationTitle("Profile")
+
+            }
+        }
+    }
 
 struct SignInApple_Previews: PreviewProvider {
     static var previews: some View {

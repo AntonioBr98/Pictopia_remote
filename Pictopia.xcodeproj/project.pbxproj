@@ -12,7 +12,6 @@
 		2BBD274927BA5AD200FA5C07 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBD274827BA5AD200FA5C07 /* CloudKit.framework */; };
 		2BD97FFE27BBA73100D0EFC4 /* CloudKitCrud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD97FFD27BBA73100D0EFC4 /* CloudKitCrud.swift */; };
 		2BDA997F27B94E6800FF593C /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA997E27B94E6800FF593C /* SearchPage.swift */; };
-		2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA998027B94E7E00FF593C /* ProfilePage.swift */; };
 		2BF9101427B9142000324E31 /* PictopiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9101327B9142000324E31 /* PictopiaApp.swift */; };
 		2BF9101627B9142000324E31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9101527B9142000324E31 /* ContentView.swift */; };
 		2BF9101827B9142100324E31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF9101727B9142100324E31 /* Assets.xcassets */; };
@@ -57,7 +56,6 @@
 		2BBD274827BA5AD200FA5C07 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		2BD97FFD27BBA73100D0EFC4 /* CloudKitCrud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitCrud.swift; sourceTree = "<group>"; };
 		2BDA997E27B94E6800FF593C /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
-		2BDA998027B94E7E00FF593C /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		2BF9101027B9142000324E31 /* Pictopia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pictopia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF9101327B9142000324E31 /* PictopiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictopiaApp.swift; sourceTree = "<group>"; };
 		2BF9101527B9142000324E31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,7 +152,7 @@
 				2BF9101327B9142000324E31 /* PictopiaApp.swift */,
 				2BF9101527B9142000324E31 /* ContentView.swift */,
 				2BDA997E27B94E6800FF593C /* SearchPage.swift */,
-				2BDA998027B94E7E00FF593C /* ProfilePage.swift */,
+				C682F35D27C6980900B7E541 /* SignInApple.swift */,
 				EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */,
 				53DCA8C227BD440D00747270 /* Discover.swift */,
 				C6C6D3B927BEE82600984987 /* TutorialPage.swift */,
@@ -199,7 +197,6 @@
 		53DCA8C127BD43E200747270 /* Dario+Alba */ = {
 			isa = PBXGroup;
 			children = (
-				C682F35D27C6980900B7E541 /* SignInApple.swift */,
 				53DCA8BB27BD43B400747270 /* Challenges.swift */,
 				53DCA8BD27BD43B400747270 /* Objects.swift */,
 				5397920627BDA65500DFDDA0 /* Explore.swift */,
@@ -346,7 +343,6 @@
 				2BF9101627B9142000324E31 /* ContentView.swift in Sources */,
 				2BF9101427B9142000324E31 /* PictopiaApp.swift in Sources */,
 				EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */,
-				2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */,
 				C682F35E27C6980900B7E541 /* SignInApple.swift in Sources */,
 				53DCA8C327BD440D00747270 /* Discover.swift in Sources */,
 				C6C6D3BE27BEE8F400984987 /* ChallengeDetails.swift in Sources */,
