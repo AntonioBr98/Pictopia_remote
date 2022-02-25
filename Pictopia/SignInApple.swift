@@ -22,13 +22,86 @@ struct SignInApple: View {
     var body: some View {
         NavigationView {
             VStack {
+                Image("icona")
+                               .frame(width: 200.0, height: 200.0)
+                               .scaleEffect(0.15)
+                               
+                           Text("Login to enjoy all the features!")
+                               .font(.title)
+                               .fontWeight(.bold)
+                               .foregroundColor(.white)
+                           
+                           
+                           HStack(spacing: 35){
+                               Image(systemName: "rectangle.stack.badge.play.fill")
+                                   .frame(width: 60.0, height: 50.0)
+                                   .scaleEffect(2.8)
+                                   .foregroundColor(.accentColor)
+                               
+                               VStack{
+                                   Text("Learn Dynamically")
+                                       .font(.title2)
+                                       .fontWeight(.bold)
+                                       .padding(.trailing)
+                                       .frame(alignment:.leading)
+                                   
+                                   Text("Watch one of the available \ntutorials to learn quickly")
+                                       .foregroundColor(Color.gray)
+                                   
+                               }
+                               
+                           }
+                           
+                           HStack(spacing: 35){
+                               Image(systemName: "photo.fill")
+                                   .frame(width: 60.0, height: 50.0)
+                                   .scaleEffect(2.8)
+                                   .foregroundColor(.accentColor)
+                               
+                               VStack{
+                                   Text("Join Challenges")
+                                       .font(.title2)
+                                       .fontWeight(.bold)
+                                       .padding(.trailing)
+                                       .frame(alignment:.leading)
+                                   
+                                   Text("Join the challenge by \nby uploading your photo")
+                                       .foregroundColor(Color.gray)
+                                   
+                               }
+                               
+                           }.padding(.trailing)
+                           HStack(spacing: 35){
+                               Image(systemName: "hand.thumbsup.fill")
+                                   .frame(width: 60.0, height: 50.0)
+                                   .scaleEffect(2.8)
+                                   .foregroundColor(.accentColor)
+                               
+                               VStack{
+                                   Text("React")
+                                       .font(.title2)
+                                       .fontWeight(.bold)
+                                       .padding(.trailing, 120.0)
+                                       .frame(alignment:.leading)
+                                   
+                                   Text("Give feedback to other \nusers' uploads")
+                                       .foregroundColor(Color.gray)
+                                   
+                               }
+                               
+                           }.padding(.trailing)
+                           
+                       
+
                 
                 if userId.isEmpty {
+                    
                     SignInButtonView()
+                    
                 }
                 
                 else {
-                    ProfilePage()
+                    Profile()
                     
                 }
                 
@@ -107,7 +180,7 @@ struct SignInButtonView: View {
     }
 }
 
-struct ProfilePage: View {
+struct Profile: View {
     
     // Samples
     @AppStorage ("email") var email: String = ""
@@ -144,3 +217,9 @@ struct SignInApple_Previews: PreviewProvider {
         SignInApple()
     }
 }
+//
+//struct SignInApple_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SignInApple()
+//    }
+//}
