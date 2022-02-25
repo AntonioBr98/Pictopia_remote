@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
 //        Text("Se riuscite a vedere questo messaggio, tutto appostos")
             
@@ -24,7 +25,7 @@ struct ContentView: View {
                 }
             
             
-            ProfilePage()
+            SignInApple()
                 .tabItem {
                 Label("Profile", systemImage: "person")
             }

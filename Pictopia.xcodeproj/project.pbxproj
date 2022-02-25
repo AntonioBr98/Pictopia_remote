@@ -25,11 +25,11 @@
 		53DCA8BE27BD43B400747270 /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BB27BD43B400747270 /* Challenges.swift */; };
 		53DCA8C027BD43B400747270 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BD27BD43B400747270 /* Objects.swift */; };
 		53DCA8C327BD440D00747270 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8C227BD440D00747270 /* Discover.swift */; };
+		C682F35E27C6980900B7E541 /* SignInApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682F35D27C6980900B7E541 /* SignInApple.swift */; };
 		C6C6D3BA27BEE82600984987 /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3B927BEE82600984987 /* TutorialPage.swift */; };
 		C6C6D3BC27BEE8CE00984987 /* ChallengeUploads.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3BB27BEE8CE00984987 /* ChallengeUploads.swift */; };
 		C6C6D3BE27BEE8F400984987 /* ChallengeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */; };
 		C6D2D7C027C56E2800AA6529 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D2D7BF27C56E2800AA6529 /* OnboardingView.swift */; };
-		EED6897B27C67392004C17C5 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED6897A27C67392004C17C5 /* SignIn.swift */; };
 		EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,12 +73,12 @@
 		53DCA8BB27BD43B400747270 /* Challenges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
 		53DCA8BD27BD43B400747270 /* Objects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Objects.swift; path = ../Objects.swift; sourceTree = "<group>"; };
 		53DCA8C227BD440D00747270 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
+		C682F35D27C6980900B7E541 /* SignInApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInApple.swift; sourceTree = "<group>"; };
 		C6C6D3B927BEE82600984987 /* TutorialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPage.swift; sourceTree = "<group>"; };
 		C6C6D3BB27BEE8CE00984987 /* ChallengeUploads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeUploads.swift; sourceTree = "<group>"; };
 		C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDetails.swift; sourceTree = "<group>"; };
 		C6C6D3C127BF0AE900984987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C6D2D7BF27C56E2800AA6529 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		EED6897A27C67392004C17C5 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,7 +199,7 @@
 		53DCA8C127BD43E200747270 /* Dario+Alba */ = {
 			isa = PBXGroup;
 			children = (
-				EED6897A27C67392004C17C5 /* SignIn.swift */,
+				C682F35D27C6980900B7E541 /* SignInApple.swift */,
 				53DCA8BB27BD43B400747270 /* Challenges.swift */,
 				53DCA8BD27BD43B400747270 /* Objects.swift */,
 				5397920627BDA65500DFDDA0 /* Explore.swift */,
@@ -347,6 +347,7 @@
 				2BF9101427B9142000324E31 /* PictopiaApp.swift in Sources */,
 				EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */,
 				2BDA998127B94E7E00FF593C /* ProfilePage.swift in Sources */,
+				C682F35E27C6980900B7E541 /* SignInApple.swift in Sources */,
 				53DCA8C327BD440D00747270 /* Discover.swift in Sources */,
 				C6C6D3BE27BEE8F400984987 /* ChallengeDetails.swift in Sources */,
 				53DCA8C027BD43B400747270 /* Objects.swift in Sources */,
@@ -354,7 +355,6 @@
 				C6C6D3BC27BEE8CE00984987 /* ChallengeUploads.swift in Sources */,
 				2BDA997F27B94E6800FF593C /* SearchPage.swift in Sources */,
 				2BBD274527BA5A4A00FA5C07 /* CloudKitUser.swift in Sources */,
-				EED6897B27C67392004C17C5 /* SignIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +516,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pictopia/Preview Content\"";
-				DEVELOPMENT_TEAM = 3CHT3NMWMV;
+				DEVELOPMENT_TEAM = 88Z274NHH6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pictopia/Info.plist;
@@ -533,7 +533,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Losvigilantes.Pictopia;
+				PRODUCT_BUNDLE_IDENTIFIER = ramona.com.Pictopia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -550,7 +550,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pictopia/Preview Content\"";
-				DEVELOPMENT_TEAM = 3CHT3NMWMV;
+				DEVELOPMENT_TEAM = 88Z274NHH6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pictopia/Info.plist;
@@ -567,7 +567,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Losvigilantes.Pictopia;
+				PRODUCT_BUNDLE_IDENTIFIER = ramona.com.Pictopia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
