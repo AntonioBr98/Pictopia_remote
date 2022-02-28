@@ -192,6 +192,10 @@ struct SignInButtonView: View {
 
 struct Profile: View {
     
+    @State var changeProfileImage: Bool = false
+    @State var openCamera: Bool = false
+    @State var imageSelected = UIImage()
+    
     // Samples
     @AppStorage ("email") var email: String = ""
     @AppStorage ("firstName") var firstName: String = ""
@@ -200,16 +204,47 @@ struct Profile: View {
 
     var body: some View {
             VStack {
-                Image(systemName: "person.crop.circle")
-                    .scaleEffect(5)
-                    .frame(width: 85, height: 85, alignment: .center)
-                    .padding()
+                
+//              Image picker
+                ZStack(alignment: .bottomTrailing) {
+                    
+                    Button(action: {
+                        changeProfileImage = true
+                        openCamera = true
+                        
+                    }, label: {
+                        
+                        if changeProfileImage {
+                            Image(uiImage: imageSelected)
+                                .resizable()
+                                .frame(width: 100, height: 100, alignment: .center)
+                                .clipShape(Circle())
+                                .padding()
+                        } else {
+                        Image("profileIcon")
+                            .resizable()
+                            .frame(width: 100, height: 100, alignment: .center)
+                            .clipShape(Circle())
+                            .padding()
+                        }
+                    })
+                    
+                    Image(systemName: "plus")
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(.yellow)
+                        .background(Color.gray)
+                        .clipShape(Circle())
+                }
+                .sheet(isPresented: $openCamera) {
+                    ImagePicker(selectedImage: $imageSelected, sourceType: .photoLibrary)
+                }
+                
+                
                 
                 Text("\(firstName) \(lastName)")
                     .font(.title3)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
-                    .padding(.bottom)
                 
                 List {
                     Text("Joined Challenges - NOT WORKING")
