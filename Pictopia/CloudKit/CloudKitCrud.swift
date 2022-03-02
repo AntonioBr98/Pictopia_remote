@@ -2,7 +2,7 @@
 //  CloudKitCrud.swift
 //  Pictopia
 //
-//  Created by Antonio Braccolino on 15/02/22.
+//  Created by Antonio Braccolino & Dario Vigilante on 15/02/22.
 //
 
 import SwiftUI
@@ -11,6 +11,7 @@ import CloudKit
 
 struct PhotoModel: Hashable{
     let name : String
+    let imageURL : URL?
     let record : CKRecord
 }
 
@@ -42,6 +43,23 @@ class CloudKitCrudViewModel: ObservableObject{
         let newPhoto = CKRecord(recordType: "Photo")
 //        STYLE è LA CHIAVE
         newPhoto["style"] = name
+        
+        
+        guard let image = UIImage(named: "composition"),
+        let url = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("composition"),
+              let data = image.jpegData(compressionQuality: 1.0) else { return }
+        
+        do {
+            try data.write(to: url)
+            let asset = CKAsset (fileURL: url)
+            newPhoto["pic"] = asset
+            saveItem(record: newPhoto)
+            
+        } catch let error {
+            print(error)
+        }
+        
+        
         
         saveItem(record: newPhoto)
     }
@@ -95,8 +113,11 @@ class CloudKitCrudViewModel: ObservableObject{
             switch returnedResult {
             case .success(let record):
                 guard let name = record["style"] as? String else {return}
+                let imageAsset = record["pic"] as? CKAsset
+                let imageURL = imageAsset?.fileURL
+                print(record)
 //                returnedItems.append(name)
-                returnedItems.append(PhotoModel(name: name, record: record))
+                returnedItems.append(PhotoModel(name: name, imageURL: imageURL, record: record))
                 
 //                QUIIIII ******
 //                record.creationDate
@@ -173,10 +194,19 @@ struct CloudKitCrud: View {
                     ForEach(vm.photos, id: \.self){
                         photo in
 //                        Text($0)
-                        Text(photo.name)
-                            .onTapGesture {
-//                                vm.updateItem(photo: photo)
+                        HStack{
+                            
+
+                            if let url = photo.imageURL, let data = try? Data(contentsOf: url), let image = UIImage(data: data)   {
+                                Image(uiImage: image)
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                                }
+                            Text(photo.name)
                             }
+                        .onTapGesture {
+//                                vm.updateItem(photo: photo)
+                        }
                     }
                     .onDelete(perform: vm.deleteItem)
                     

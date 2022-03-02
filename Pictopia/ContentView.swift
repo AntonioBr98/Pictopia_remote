@@ -29,6 +29,10 @@ struct ContentView: View {
                 .tabItem {
                 Label("Profile", systemImage: "person")
             }
+            CloudKitCrud()
+                .tabItem {
+                Label("Profile", systemImage: "person")
+            }
         }
     }
 }
