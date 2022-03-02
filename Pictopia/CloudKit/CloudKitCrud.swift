@@ -2,7 +2,7 @@
 //  CloudKitCrud.swift
 //  Pictopia
 //
-//  Created by Antonio Braccolino & Dario Vigilante on 15/02/22.
+//  Created by Antonio Braccolino & Dario Vigilante MUAHAHAHAHAHAHAH on 15/02/22.
 //
 
 import SwiftUI
