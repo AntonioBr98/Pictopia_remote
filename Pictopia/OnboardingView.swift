@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    
+
     @Binding var showOnboarding: Bool
     let test52 = NSLocalizedString("OnboardingMessage1", comment: "Ciao")
     let test53 = NSLocalizedString("OnboardingMessage2", comment: "Ciao")

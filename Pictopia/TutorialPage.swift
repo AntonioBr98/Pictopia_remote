@@ -103,11 +103,11 @@ struct TutorialPage: View {
     var body: some View {
         
             
-            ZStack{
+            VStack{
                 LoopingPlayer()
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
-            
+                    
                 NavigationLink(destination: ChallengeUploads(showChallengeUpdates: $showChallengeUploads)) {
 //                  Label name and arrow
                     HStack {
@@ -120,24 +120,15 @@ struct TutorialPage: View {
                     }
                     .foregroundColor(.white)
                     .frame(width: 370, height: 55)
-                    .background(.quaternary)
+                    .background(.secondary)
                     .mask(RoundedRectangle(cornerRadius: 20))
-                    .offset(y: 300)
+//                    .offset(y: 300)
+                    .padding()
             }
             .navigationTitle(text12)
             .navigationBarTitleDisplayMode(.inline)
-//            .navigationBarItems(leading:
-//                Button{
-//
-//                } label: {
-//                    Image(systemName: "chevron.backward.circle.fill")
-//                        .foregroundColor(Color.white)
-//                        .padding(.top)
-//                        .font(.title3)
-//                })
             .navigationViewStyle(.columns)
            
-
     }
     
 }
