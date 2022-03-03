@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    
+
     @Binding var showOnboarding: Bool
     
     var body: some View {

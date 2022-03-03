@@ -101,11 +101,11 @@ struct TutorialPage: View {
     var body: some View {
         
             
-            ZStack{
+            VStack{
                 LoopingPlayer()
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
-            
+                    
                 NavigationLink(destination: ChallengeUploads(showChallengeUpdates: $showChallengeUploads)) {
 //                  Label name and arrow
                     HStack {
@@ -120,7 +120,7 @@ struct TutorialPage: View {
                     .frame(width: 370, height: 55)
                     .background(.quaternary)
                     .mask(RoundedRectangle(cornerRadius: 20))
-                    .offset(y: 300)
+//                    .offset(y: 300)
             }
             .navigationTitle("Central Perspective")
             .navigationBarTitleDisplayMode(.inline)
