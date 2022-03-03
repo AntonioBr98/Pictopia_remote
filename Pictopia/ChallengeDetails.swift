@@ -13,5 +13,7 @@ struct challenge {
     var photoref: Image
     var secondTitle: String
 }
+let test50 = NSLocalizedString("Challenge1", comment: "Ciao")
+let test51 = NSLocalizedString("Challenge2", comment: "Ciao")
 
-var firstChallenge = challenge(title: "Photo reference", photoref: Image("PngLosVigil"), secondTitle: "Uploads")
+var firstChallenge = challenge(title: test50, photoref: Image("PngLosVigil"), secondTitle: test51)

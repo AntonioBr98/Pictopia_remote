@@ -98,6 +98,8 @@ struct TutorialPage: View {
     
 //    let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "VideoTest", ofType: "MOV")!))
         
+    let text11:LocalizedStringKey = "OnboardingMessage3"
+    let text12:LocalizedStringKey = "Central Perspective"
     var body: some View {
         
             
@@ -109,7 +111,7 @@ struct TutorialPage: View {
                 NavigationLink(destination: ChallengeUploads(showChallengeUpdates: $showChallengeUploads)) {
 //                  Label name and arrow
                     HStack {
-                        Text("Join the Challenge")
+                        Text(text11)
                             .padding()
                         Spacer()
                         Image(systemName: "chevron.right")
@@ -122,7 +124,7 @@ struct TutorialPage: View {
                     .mask(RoundedRectangle(cornerRadius: 20))
                     .offset(y: 300)
             }
-            .navigationTitle("Central Perspective")
+            .navigationTitle(text12)
             .navigationBarTitleDisplayMode(.inline)
 //            .navigationBarItems(leading:
 //                Button{

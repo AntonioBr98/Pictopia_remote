@@ -1,0 +1,90 @@
+/* 
+  Localizable.strings
+  Pictopia
+
+  Created by Antonio Braccolino on 02/03/22.
+  
+*/
+
+//USER INFORMATION
+"UserId" = "User ID";
+"firstName" = "First name";
+"lastName" = "Last Name";
+"email" = "e-mail";
+
+"SignIn" = "Sign In";
+
+
+"Search" = "Search";
+//TOPICS
+
+"Composition"       = "Composition";
+"Portrait"          = "Portrait";
+"Photography Basics" = "Photography Basics";
+"Black and White"     = "Black & White";
+"Macro"             = "Macro";
+"Street Photography" = "Street Photography";
+"Architecture Photography" = "Architecture Photography";
+"Lights"            = "Lights";
+"Lights2"            = "Lights Effects";
+"Food"              = "Food";
+"Abstract"          = "Abstract";
+"Landscape"         = "Landscape";
+"Colors"            = "Colors";
+"Sport"             = "Sport";
+"Nature"            = "Nature";
+"Fashion"           = "Fashion";
+"Wedding"           = "Wedding";
+"Real Life"          = "Documentary";
+"Lenses"            = "Lenses";
+
+
+//CHALLENGES
+
+"Rule of Thirds"      = "Rule of Third";
+"Central Perspective" = "Central Perspective";
+"Light Painting"     = "Long Exposure";
+"Effetto Bokeh"      = "Bokeh Effect";
+
+//NAVIGATION
+
+"Profile" = "Profile";
+"Discover" = "Discover";
+"Search" = "Search";
+"Challenges" = "Challenges";
+"Topics" = "Topics";
+"Join" = "Join the Challenge";
+
+"Most Recents" = "Most Recents";
+"User Favourites" = "User Favourites";
+"Editor Choiches" = "Editor Choiches";
+
+//MESSAGES
+
+"Coming Soon" = "COMING SOON";
+"Type to Search" = "Type to search topics or challenges";
+"What to do?" = "What to do?";
+"Gallery" = "Gallery";
+"UnUploaded" = "Uploaded photos not yet available";
+
+//ONBOARDING
+
+"OnboardingMessage1" = "Dive \nyourself \ninto photography!";
+"OnboardingMessage2" = "Choose one of the tutorials available in the Discover page and start learning.";
+"OnboardingMessage3" = "Join the \nchallenge by \nuploading yuor photo";
+"Skip" = "Skip";
+"Begin" = "Let's begin";
+
+"Profilo1" = "Login to enjoy all the features!";
+"Profilo2" = "Learn Dynamically!";
+"Profilo3" = "Watch one of the available \ntutorials to learn quickly";
+"Profilo4" = "Join Challenges";
+"Profilo5" = "Join the challenge by \nby uploading your photo";
+"Profilo6" = "React";
+"Profilo7" = "Give feedback to other \nusers' uploads";
+"Profilo8" = "Joined Challenges - NOT WORKING";
+"Profilo9" = "Profile";
+"Profilo10" = "Badges - NOT WORKING";
+
+"Challenge1" = "Photo reference";
+"Challenge2" = "Uploads";

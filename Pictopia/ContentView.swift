@@ -9,6 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     
+    let text:LocalizedStringKey = "Discover"
+    let text2:LocalizedStringKey = "Search"
+    let text3:LocalizedStringKey = "Profile"
+    
+    
     var body: some View {
 //        Text("Se riuscite a vedere questo messaggio, tutto appostos")
             
@@ -16,18 +21,18 @@ struct ContentView: View {
         TabView{
             Discover()
                 .tabItem {
-                    Label("Discover", systemImage: "rectangle.stack.badge.play")
+                    Label(text, systemImage: "rectangle.stack.badge.play")
                 }
             
             SearchPage()
                 .tabItem {
-                    Label("Search", systemImage: "magnifyingglass")
+                    Label(text2, systemImage: "magnifyingglass")
                 }
             
             
             SignInApple()
                 .tabItem {
-                Label("Profile", systemImage: "person")
+                Label(text3, systemImage: "person")
             }
         }
     }

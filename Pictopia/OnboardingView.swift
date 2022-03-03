@@ -10,6 +10,11 @@ import SwiftUI
 struct OnboardingView: View {
     
     @Binding var showOnboarding: Bool
+    let test52 = NSLocalizedString("OnboardingMessage1", comment: "Ciao")
+    let test53 = NSLocalizedString("OnboardingMessage2", comment: "Ciao")
+    let test54 = NSLocalizedString("OnboardingMessage3", comment: "Ciao")
+    let test55 = NSLocalizedString("Skip", comment: "Ciao")
+    
     
     var body: some View {
         
@@ -19,13 +24,13 @@ struct OnboardingView: View {
     //       Onboarding
                 PageView(
                     imageName: "onboard1",
-                    title: "Dive \nyourself \ninto photography!", showsDismissButton: false, showOnboarding: $showOnboarding
+                    title: test52, showsDismissButton: false, showOnboarding: $showOnboarding
                     )
                     .padding(.bottom, 100)
 
                 
                 PageView(
-                    imageName: "onboard2", title: "Choose one of the tutorials available in the Discover page and start learning", showsDismissButton: false, showOnboarding: $showOnboarding
+                    imageName: "onboard2", title: test53, showsDismissButton: false, showOnboarding: $showOnboarding
                     )
                     .padding(.bottom, 100)
 
@@ -33,7 +38,7 @@ struct OnboardingView: View {
 
                 PageView(
                     imageName: "onboard3",
-                    title: "Join the \nchallenge by \nuploading yuor photo", showsDismissButton: true, showOnboarding: $showOnboarding
+                    title: test54, showsDismissButton: true, showOnboarding: $showOnboarding
                     )
                     .padding(.bottom, 100)
 
@@ -43,7 +48,7 @@ struct OnboardingView: View {
                     .edgesIgnoringSafeArea(.bottom)
             //      Skip button
                     .navigationBarItems(trailing:
-                            Button("Skip") {
+                            Button(test55) {
                             showOnboarding.toggle()
                 })
         }
@@ -58,6 +63,8 @@ struct PageView: View {
     let title: String
     let showsDismissButton: Bool
     @Binding var showOnboarding: Bool
+    
+    let text56:LocalizedStringKey = "Begin"
     
     var body: some View {
         VStack(spacing: 35) {
@@ -78,7 +85,7 @@ struct PageView: View {
                     showOnboarding.toggle()
                     
                 }, label: {
-                    Text("Let's begin")
+                    Text(text56)
                         .bold()
                         .foregroundColor(.black)
                         .frame(width: 350, height: 42)

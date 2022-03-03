@@ -21,6 +21,13 @@ struct SearchPage: View {
     @StateObject var explore = ExploreItems()
     @State private var nav = false
     
+    
+    let text4:LocalizedStringKey = "Topics"
+    let text5:LocalizedStringKey = "Challenges"
+    let text6:LocalizedStringKey = "Search"
+    let text7:LocalizedStringKey = "Type to Search"
+   
+    
     var body: some View {
         
         GeometryReader{ reader in
@@ -34,7 +41,7 @@ struct SearchPage: View {
                 VStack{
                     ScrollView(showsIndicators: false){
                         VStack{
-                        Text("Topics")
+                        Text(text4)
 //                             for \(searchText)")
                             .font(.title2)
                             .fontWeight(.semibold)
@@ -65,7 +72,7 @@ struct SearchPage: View {
                             }
 
                             VStack{
-                            Text("Challenges")
+                            Text(text5)
 //                                 for \(searchText)")
                                 .font(.title2)
                                 .fontWeight(.semibold)
@@ -92,10 +99,11 @@ struct SearchPage: View {
                                 .padding(.horizontal)
                         }
                 }
-                .navigationTitle("Search")
+                .navigationTitle(text6)
                 
             }
-            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Type to search topics or challenges")
+            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt:
+            text7)
         }
 
 }
@@ -104,6 +112,8 @@ struct SearchPage: View {
 struct SearchTopicItemView: View {
     
     let item:Item
+    let text8:LocalizedStringKey = "Coming Soon"
+    
     var body: some View {
         
         GeometryReader{ reader in
@@ -118,7 +128,7 @@ struct SearchTopicItemView: View {
                     .mask(
                         ZStack{
                             Color.black.opacity(0.4)
-                       Text("COMING SOON")
+                       Text(text8)
                         .font(.largeTitle)
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)

@@ -14,6 +14,8 @@ struct ChallengeUploads: View {
     
     let columns: [GridItem] = [GridItem(), GridItem(), GridItem()]
     
+    let text13:LocalizedStringKey = "UnUploaded"
+    let text14:LocalizedStringKey = "OnboardingMessage3"
     var body: some View {
             
         VStack(alignment: .leading) {
@@ -40,7 +42,7 @@ struct ChallengeUploads: View {
             
 
 //            Message no uploads
-            Text("Uploaded photos not yet available")
+            Text(text13)
                 .font(.title3)
                 .fontWeight(.light)
                 .foregroundColor(Color.gray)
@@ -70,7 +72,7 @@ struct ChallengeUploads: View {
                 
             }
             .padding()
-            .navigationTitle("Join the Challenge")
+            .navigationTitle(text14)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing:
                 Button("\(Image(systemName: "plus"))") {

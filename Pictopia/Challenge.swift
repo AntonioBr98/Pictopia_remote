@@ -15,6 +15,11 @@ struct Challenge: View {
     @StateObject var challenges = Challenges()
     @StateObject var explore = ExploreItems()
     
+    
+    let text5:LocalizedStringKey = "Challenges"
+    
+    
+    
     var body: some View {
         GeometryReader{ reader in
             let columns = Array(
@@ -26,7 +31,7 @@ struct Challenge: View {
                         
                         VStack(spacing: 0){
                             VStack{
-                                Text("Challenges")
+                                Text(text5)
                                     .font(.title)
                                     .fontWeight(.semibold)
                                     .padding([.top, .leading])
@@ -59,6 +64,9 @@ struct Challenge: View {
 struct HItemView: View {
     
     let item:Item
+    
+    let text9:LocalizedStringKey = "Coming Soon"
+    
     var body: some View {
         
         GeometryReader{ reader in
@@ -73,7 +81,7 @@ struct HItemView: View {
                     .mask(
                         ZStack{
                             Color.black.opacity(0.4)
-                       Text("COMING SOON")
+                       Text(text9)
                         .font(.largeTitle)
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)

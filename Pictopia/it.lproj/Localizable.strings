@@ -1,0 +1,91 @@
+/* 
+  Localizable.strings
+  Pictopia
+
+  Created by Antonio Braccolino on 02/03/22.
+  
+*/
+
+//USER INFORMATION
+"UserId" = "User ID";
+"firstName" = "Nome";
+"lastName" = "Cognome";
+"email" = "e-mail";
+
+"SignIn" = "Accedi";
+
+"Search" = "Cerca";
+//TOPICS
+
+"Composition"       = "Composizione";
+"Portrait"          = "Ritratto";
+"Photography Basics" = "Basi di fotografia";
+"Black and White"     = "Bianco e nero";
+"Macro"             = "Macro";
+"Street Photography" = "Fotografia di strada";
+"Architecture Photography" = "Fotografia Architetturale";
+"Lights"            = "Luci";
+"Lights2"            = "Effetti luce";
+"Food"              = "Cibo";
+"Abstract"          = "Astratto";
+"Landscape"         = "Paesaggi";
+"Colors"            = "Colori";
+"Sport"             = "Sport";
+"Nature"            = "Natura";
+"Fashion"           = "Moda";
+"Wedding"           = "Matrimonio";
+"Real Life"          = "Documentario";
+"Lenses"            = "Lenti";
+
+
+//CHALLENGES
+
+"Rule of Thirds"      = "Regola dei terzi";
+"Central Perspective" = "Prospettiva centrale";
+"Light Painting"     = "Esposizione lunga";
+"Effetto Bokeh"      = "Effetto Bokeh";
+
+//NAVIGATION
+
+"Profile" = "Profilo";
+"Discover" = "Scopri";
+"Search" = "Cerca";
+"Challenges" = "Sfide";
+"Topics" = "Topics";
+"Join" = "Partecipa alla sfida";
+
+"Most Recents" = "Recenti";
+"User Favourites" = "Preferiti dagli utenti";
+"Editor Choiches" = "Scelti dall'editore";
+
+//MESSAGES
+
+"Coming Soon" = "IN ARRIVO";
+"Type to Search" = "Cerca topic o sfide";
+"What to do?" = "Cosa fare?";
+"Gallery" = "Galleria";
+"UnUploaded" = "Al momento nessuna immagine è stata caricata";
+
+//ONBOARDING
+
+"OnboardingMessage1" = "Tuffati nella \nfotografia";
+"OnboardingMessage2" = "Scegli uno dei tutorial disponibili della pagina Scopri e inizia ad imparare";
+"OnboardingMessage3" = "Partecipa alle sfide \n caricando la tua foto";
+"Skip" = "Salta";
+"Begin" = "Inizia";
+
+
+
+"Profilo1" = "Effettua il login per accedere \na tutte le funzionalità ";
+"Profilo2" = "Impara in modo dinamico";
+"Profilo3" = "Scegli uno dei tutorial \ned inizia ad imparare";
+"Profilo4" = "Partecipa alle sfide      ";
+"Profilo5" = "Partecipa alle sfide caricando la tua foto";
+"Profilo6" = "Interagisci";
+"Profilo7" = "Commenta le foto delle altre persone";
+"Profilo8" = "Partecipa alle sfide - NON ATTIVO AL MOMENTO";
+"Profilo9" = "Profilo";
+"Profilo10" = "Badges - NON ATTIVO AL MOMENTO";
+
+"Challenge1" = "Foto di Riferimento";
+"Challenge2" = "Caricamenti";

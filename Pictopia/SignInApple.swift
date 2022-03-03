@@ -19,6 +19,17 @@ struct SignInApple: View {
     @AppStorage ("lastName") var lastName: String = ""
     @AppStorage ("userId") var userId: String = ""
     
+    
+    let text30:LocalizedStringKey = "Profilo1"
+    let text31:LocalizedStringKey = "Profilo2"
+    let text32:LocalizedStringKey = "Profilo3"
+    let text33:LocalizedStringKey = "Profilo4"
+    let text34:LocalizedStringKey = "Profilo5"
+    let text35:LocalizedStringKey = "Profilo6"
+    let text36:LocalizedStringKey = "Profilo7"
+    let text37:LocalizedStringKey = "Profilo9"
+  
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -31,7 +42,7 @@ struct SignInApple: View {
                            
                     Spacer()
                     
-                    Text("Login to enjoy all the features!")
+                    Text(text30)
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -46,13 +57,13 @@ struct SignInApple: View {
                                 .foregroundColor(.accentColor)
                                    
                         VStack{
-                            Text("Learn Dynamically")
+                            Text(text31)
                                 .font(.title2)
                                 .fontWeight(.bold)
                                 .padding(.trailing)
                                 .frame(alignment:.leading)
                                        
-                            Text("Watch one of the available \ntutorials to learn quickly")
+                            Text(text32)
                                 .foregroundColor(Color.gray)
                                        
                         }
@@ -68,13 +79,13 @@ struct SignInApple: View {
                             .foregroundColor(.accentColor)
                                    
                         VStack{
-                            Text("Join Challenges")
+                            Text(text33)
                                 .font(.title2)
                                 .fontWeight(.bold)
                                 .padding(.trailing)
                                 .frame(alignment:.leading)
                                        
-                            Text("Join the challenge by \nby uploading your photo")
+                            Text(text34)
                                 .foregroundColor(Color.gray)
                                        
                             }
@@ -90,13 +101,13 @@ struct SignInApple: View {
                             .foregroundColor(.accentColor)
                                    
                         VStack{
-                            Text("React")
+                            Text(text35)
                                 .font(.title2)
                                 .fontWeight(.bold)
                                 .padding(.trailing, 120.0)
                                 .frame(alignment:.leading)
                                        
-                            Text("Give feedback to other \nusers' uploads")
+                            Text(text36)
                                 .foregroundColor(Color.gray)
                                        
                             }
@@ -116,7 +127,7 @@ struct SignInApple: View {
                 }
                 
             }
-            .navigationTitle("Profile")
+            .navigationTitle(text37)
         }
     }
 }
@@ -201,6 +212,10 @@ struct Profile: View {
     @AppStorage ("firstName") var firstName: String = ""
     @AppStorage ("lastName") var lastName: String = ""
     @AppStorage ("userId") var userId: String = ""
+    
+    let text38:LocalizedStringKey = "Profilo8"
+    let text39:LocalizedStringKey = "Profilo10"
+    let text40:LocalizedStringKey = "Profilo9"
 
     var body: some View {
             VStack {
@@ -247,11 +262,11 @@ struct Profile: View {
                     .multilineTextAlignment(.center)
                 
                 List {
-                    Text("Joined Challenges - NOT WORKING")
-                    Text("Badges - NOT WORKING")
+                    Text(text38)
+                    Text(text39)
 
                 }
-                .navigationTitle("Profile")
+                .navigationTitle(text40)
 
             }
         }
@@ -259,7 +274,11 @@ struct Profile: View {
 
 struct SignInApple_Previews: PreviewProvider {
     static var previews: some View {
-        SignInApple()
+        Group {
+            SignInApple()
+            SignInApple()
+                .previewDevice("iPhone 11")
+        }
     }
 }
 //

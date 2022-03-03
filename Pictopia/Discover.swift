@@ -19,6 +19,8 @@ struct Discover: View {
     @StateObject var explore = ExploreItems()
     @State private var nav = false
     
+    let text10:LocalizedStringKey = "Discover"
+    
     var body: some View {
         
         GeometryReader{ reader in
@@ -64,7 +66,7 @@ struct Discover: View {
                         }
                     }
                 }
-                .navigationTitle("Discover")
+                .navigationTitle(text10)
             }
             .fullScreenCover(isPresented: $showOnboarding, content: { OnboardingView(showOnboarding: $showOnboarding)})
             
@@ -76,6 +78,9 @@ struct Discover: View {
 struct ItemView: View {
     
     let item:Item
+    
+    let text9:LocalizedStringKey = "Coming Soon"
+    
     var body: some View {
         
         GeometryReader{ reader in
@@ -90,7 +95,7 @@ struct ItemView: View {
                     .mask(
                         ZStack{
                             Color.black.opacity(0.4)
-                       Text("COMING SOON")
+                       Text(text9)
                         .font(.largeTitle)
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
