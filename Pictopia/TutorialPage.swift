@@ -118,24 +118,15 @@ struct TutorialPage: View {
                     }
                     .foregroundColor(.white)
                     .frame(width: 370, height: 55)
-                    .background(.quaternary)
+                    .background(.secondary)
                     .mask(RoundedRectangle(cornerRadius: 20))
 //                    .offset(y: 300)
+                    .padding()
             }
             .navigationTitle("Central Perspective")
             .navigationBarTitleDisplayMode(.inline)
-//            .navigationBarItems(leading:
-//                Button{
-//
-//                } label: {
-//                    Image(systemName: "chevron.backward.circle.fill")
-//                        .foregroundColor(Color.white)
-//                        .padding(.top)
-//                        .font(.title3)
-//                })
             .navigationViewStyle(.columns)
            
-
     }
     
 }
