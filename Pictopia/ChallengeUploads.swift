@@ -15,7 +15,7 @@ struct ChallengeUploads: View {
     let columns: [GridItem] = [GridItem(), GridItem(), GridItem()]
     
     let text13:LocalizedStringKey = "UnUploaded"
-    let text14:LocalizedStringKey = "OnboardingMessage3"
+    let text14:LocalizedStringKey = "Join"
     var body: some View {
             
         VStack(alignment: .leading) {
