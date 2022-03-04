@@ -2,7 +2,7 @@
 //  CloudKitCrud.swift
 //  Pictopia
 //
-//  Created by Antonio Braccolino on 15/02/22.
+//  Created by Antonio Braccolino & Dario Vigilante MUAHAHAHAHAHAHAH on 15/02/22.
 //
 
 import SwiftUI
@@ -11,6 +11,7 @@ import CloudKit
 
 struct PhotoModel: Hashable{
     let name : String
+    let imageURL : URL?
     let record : CKRecord
 }
 
@@ -20,6 +21,7 @@ class CloudKitCrudViewModel: ObservableObject{
     @Published var text: String = ""
 //    @Published var photos : [String] = []
     @Published var photos : [PhotoModel] = []
+    @Published var imageSelected = UIImage()
     
     init(){
         fetchItems()
@@ -33,7 +35,7 @@ class CloudKitCrudViewModel: ObservableObject{
         addItem(name: text)
     }
     
-    
+
     
     
     private func addItem(name: String){
@@ -42,6 +44,24 @@ class CloudKitCrudViewModel: ObservableObject{
         let newPhoto = CKRecord(recordType: "Photo")
 //        STYLE è LA CHIAVE
         newPhoto["style"] = name
+        
+        
+        guard
+//            let image = UIImage(named: "composition"),
+        let url = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("upload"),
+              let data = imageSelected.jpegData(compressionQuality: 1.0) else { return }
+        
+        do {
+            try data.write(to: url)
+            let asset = CKAsset (fileURL: url)
+            newPhoto["pic"] = asset
+            saveItem(record: newPhoto)
+            
+        } catch let error {
+            print(error)
+        }
+        
+        
         
         saveItem(record: newPhoto)
     }
@@ -56,7 +76,7 @@ class CloudKitCrudViewModel: ObservableObject{
             print("Error: \(returnedError)")
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                self?.text = ""
+                self?.text = "ikj"
                 self?.fetchItems()
             }
             
@@ -95,8 +115,11 @@ class CloudKitCrudViewModel: ObservableObject{
             switch returnedResult {
             case .success(let record):
                 guard let name = record["style"] as? String else {return}
+                let imageAsset = record["pic"] as? CKAsset
+                let imageURL = imageAsset?.fileURL
+                print(record)
 //                returnedItems.append(name)
-                returnedItems.append(PhotoModel(name: name, record: record))
+                returnedItems.append(PhotoModel(name: name, imageURL: imageURL, record: record))
                 
 //                QUIIIII ******
 //                record.creationDate
@@ -160,12 +183,17 @@ class CloudKitCrudViewModel: ObservableObject{
 struct CloudKitCrud: View {
     
     @StateObject private var vm = CloudKitCrudViewModel()
+    @State var changeProfileImage: Bool = false
+    @State var openCamera: Bool = false
+
     
     var body: some View {
        NavigationView{
             VStack{
+                
                 header
                 textField
+                Picfield
                 addButton
                
                 List{
@@ -173,10 +201,19 @@ struct CloudKitCrud: View {
                     ForEach(vm.photos, id: \.self){
                         photo in
 //                        Text($0)
-                        Text(photo.name)
-                            .onTapGesture {
-//                                vm.updateItem(photo: photo)
+                        HStack{
+                            
+
+                            if let url = photo.imageURL, let data = try? Data(contentsOf: url), let image = UIImage(data: data)   {
+                                Image(uiImage: image)
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                                }
+                            Text(photo.name)
                             }
+                        .onTapGesture {
+//                                vm.updateItem(photo: photo)
+                        }
                     }
                     .onDelete(perform: vm.deleteItem)
                     
@@ -200,8 +237,6 @@ struct CloudKitCrud_Previews: PreviewProvider {
 
 
 
-
-
 extension CloudKitCrud{
     private var header: some View{
         
@@ -215,6 +250,25 @@ extension CloudKitCrud{
             .padding(.leading)
             .background(Color.gray.opacity(0.1))
             .cornerRadius(20)
+    }
+    
+    private var Picfield: some View {
+        Button(action: {
+            changeProfileImage = true
+            openCamera = true
+
+        }, label: {
+            Text("Carica ")
+                .font(.headline)
+                .foregroundColor(.white)
+                .frame(height: 55)
+                .frame(maxWidth: .infinity)
+                .background(Color.blue.opacity(0.7))
+                .cornerRadius(20)
+        })
+            .sheet(isPresented: $openCamera) {
+                ImagePicker(selectedImage: $vm.imageSelected, sourceType: .photoLibrary)
+    }
     }
     
     private var addButton: some View{
@@ -235,8 +289,4 @@ extension CloudKitCrud{
 
 
 
-
-
-//NON POSSO INVIARE DIRETTAMENTE LE FOTO A CLOUDKIT, LE DEVO PRIMA CONVERTIRE IN CKASSETS ED INVIARE QUEST ULTIMO
-//aaaa
 
