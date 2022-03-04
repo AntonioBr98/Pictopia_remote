@@ -92,12 +92,12 @@ class PlayerUIView: UIView {
 }
 
 struct TutorialPage: View {
+    let selectedchlg: Item
     @State var showChallengeUploads: Bool = false
     
 //    @State private var player = AVPlayer()
     
 //    let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "VideoTest", ofType: "MOV")!))
-        
     let text11:LocalizedStringKey = "Join"
     let text12:LocalizedStringKey = "Central Perspective"
     var body: some View {
@@ -108,7 +108,7 @@ struct TutorialPage: View {
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
                     
-                NavigationLink(destination: ChallengeUploads(showChallengeUpdates: $showChallengeUploads)) {
+                NavigationLink(destination: CloudKitCrud(selectedchlg: selectedchlg, showChallengeUpdates: $showChallengeUploads)) {
 //                  Label name and arrow
                     HStack {
                         Text(text11)
@@ -125,7 +125,7 @@ struct TutorialPage: View {
 //                    .offset(y: 300)
                     .padding()
             }
-            .navigationTitle(text12)
+            .navigationTitle(selectedchlg.name)
             .navigationBarTitleDisplayMode(.inline)
             .navigationViewStyle(.columns)
            
@@ -134,8 +134,8 @@ struct TutorialPage: View {
 }
 
 
-struct TutorialPage_Previews: PreviewProvider {
-    static var previews: some View {
-        TutorialPage()
-    }
-}
+//struct TutorialPage_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TutorialPage()
+//    }
+//}

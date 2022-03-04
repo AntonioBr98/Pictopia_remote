@@ -2,7 +2,7 @@
 //  CloudKitCrud.swift
 //  Pictopia
 //
-//  Created by Antonio Braccolino on 15/02/22.
+//  Created by Antonio Braccolino & Dario Vigilante MUAHAHAHAHAHAHAH on 15/02/22.
 //
 
 import SwiftUI
@@ -11,6 +11,7 @@ import CloudKit
 
 struct PhotoModel: Hashable{
     let name : String
+    let imageURL : URL?
     let record : CKRecord
 }
 
@@ -20,6 +21,7 @@ class CloudKitCrudViewModel: ObservableObject{
     @Published var text: String = ""
 //    @Published var photos : [String] = []
     @Published var photos : [PhotoModel] = []
+    @Published var imageSelected = UIImage()
     
     init(){
         fetchItems()
@@ -33,7 +35,7 @@ class CloudKitCrudViewModel: ObservableObject{
         addItem(name: text)
     }
     
-    
+
     
     
     private func addItem(name: String){
@@ -42,6 +44,24 @@ class CloudKitCrudViewModel: ObservableObject{
         let newPhoto = CKRecord(recordType: "Photo")
 //        STYLE è LA CHIAVE
         newPhoto["style"] = name
+        
+        
+        guard
+//            let image = UIImage(named: "composition"),
+        let url = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("upload"),
+              let data = imageSelected.jpegData(compressionQuality: 1.0) else { return }
+        
+        do {
+            try data.write(to: url)
+            let asset = CKAsset (fileURL: url)
+            newPhoto["pic"] = asset
+            saveItem(record: newPhoto)
+            
+        } catch let error {
+            print(error)
+        }
+        
+        
         
         saveItem(record: newPhoto)
     }
@@ -55,7 +75,7 @@ class CloudKitCrudViewModel: ObservableObject{
             print("Record: \(returnedRecord)")
             print("Error: \(returnedError)")
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 self?.text = ""
                 self?.fetchItems()
             }
@@ -95,8 +115,11 @@ class CloudKitCrudViewModel: ObservableObject{
             switch returnedResult {
             case .success(let record):
                 guard let name = record["style"] as? String else {return}
+                let imageAsset = record["pic"] as? CKAsset
+                let imageURL = imageAsset?.fileURL
+                print(record)
 //                returnedItems.append(name)
-                returnedItems.append(PhotoModel(name: name, record: record))
+                returnedItems.append(PhotoModel(name: name, imageURL: imageURL, record: record))
                 
 //                QUIIIII ******
 //                record.creationDate
@@ -160,54 +183,135 @@ class CloudKitCrudViewModel: ObservableObject{
 struct CloudKitCrud: View {
     
     @StateObject private var vm = CloudKitCrudViewModel()
+    @State var changeProfileImage: Bool = false
+    @State var openCamera: Bool = false
+    let selectedchlg: Item
+//
+    
+    @Binding var showChallengeUpdates: Bool
+    @State var showActionSheet: Bool = false
+    let columns: [GridItem] = [GridItem(), GridItem(), GridItem()]
+    let text13:LocalizedStringKey = "UnUploaded"
+    let text14:LocalizedStringKey = "OnboardingMessage3"
+    
+
     
     var body: some View {
-       NavigationView{
-            VStack{
-                header
-                textField
-                addButton
-               
+//ScrollView{
+            VStack(alignment: .leading) {
+             
+                    Text(firstChallenge.title)
+                            .font(.title)
+                            .fontWeight(.semibold)
+                            .multilineTextAlignment(.leading)
+                
+                if vm.imageSelected != UIImage() {
+                    
+                    Image(uiImage:vm.imageSelected)
+                        .resizable()
+                        .cornerRadius(20)
+                        .padding(5)
+                        .padding()
+                        .scaledToFill()
+                    
+                    textField
+                    addButton
+                }
+                else {
+                    
+                    Image(selectedchlg.image)
+                        .resizable()
+                        .cornerRadius(20)
+                        .padding(5)
+                        .padding()
+                        .scaledToFit()
+                    
+                }
+
+
+                    Text(firstChallenge.secondTitle)
+                            .font(.title)
+                            .fontWeight(.semibold)
+                            .multilineTextAlignment(.leading)
+                            .padding(.top)
+
+
+        //            Message no uploads
+//                    Text(text13)
+//                        .font(.title3)
+//                        .fontWeight(.light)
+//                        .foregroundColor(Color.gray)
+//                        .multilineTextAlignment(.leading)
+//                        .padding(.top, 2)
+
+                    Spacer()
+
+//
                 List{
 //                    VM photos perchè è un array
-                    ForEach(vm.photos, id: \.self){
+                    ForEach(vm.photos
+                                .filter { $0.name.contains(selectedchlg.image)}
+                            , id: \.self
+//                            , vm.text == selectedchlg.name
+                    ){
                         photo in
 //                        Text($0)
-                        Text(photo.name)
-                            .onTapGesture {
-//                                vm.updateItem(photo: photo)
+                        HStack{
+                            
+
+                            if let url = photo.imageURL, let data = try? Data(contentsOf: url), let image = UIImage(data: data)   {
+                                Image(uiImage: image)
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                                }
+                            Text(photo.name)
                             }
+                        .onTapGesture {
+//                                vm.updateItem(photo: photo)
+                        }
                     }
                     .onDelete(perform: vm.deleteItem)
                     
                 }
                 .listStyle(PlainListStyle())
-                
+                 
             }
-            .padding()
-            .navigationBarHidden(true)
+            .navigationTitle(selectedchlg.name)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(trailing:
+                Button("\(Image(systemName: "plus"))") {
+                showActionSheet.toggle()
+                }
+                .sheet(isPresented: $openCamera) {ImagePicker(selectedImage: $vm.imageSelected, sourceType: .photoLibrary)}
+                .confirmationDialog("What to do?", isPresented: $showActionSheet, titleVisibility: .hidden, actions: {
+                Button("Gallery") {
+                    changeProfileImage = true
+                    openCamera = true
+                    vm.text = selectedchlg.image
+                }
+
+            }))
+
         }
-    }
+//}
 }
 
-struct CloudKitCrud_Previews: PreviewProvider {
-    static var previews: some View {
-        CloudKitCrud()
-            .preferredColorScheme(ColorScheme .dark)
-    }
-}
-
-
+//struct CloudKitCrud_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CloudKitCrud(showChallengeUpdates: .constant(true))
+//            .preferredColorScheme(ColorScheme .dark)
+//    }
+//}
 
 
 
 
 extension CloudKitCrud{
-    private var header: some View{
-        
-        Text("CloudKit inserimento ")
-            .font(.headline)
-    }
+//    private var header: some View{
+//
+//        Text("CloudKit inserimento ")
+//            .font(.headline)
+//    }
     
     private var textField: some View {
         TextField("Add something here...", text: $vm.text)
@@ -217,11 +321,12 @@ extension CloudKitCrud{
             .cornerRadius(20)
     }
     
+    
     private var addButton: some View{
         Button{
             vm.addButtonPressed()
         } label: {
-            Text("Add")
+            Text("Upload image")
                 .font(.headline)
                 .foregroundColor(.white)
                 .frame(height: 55)
@@ -235,8 +340,4 @@ extension CloudKitCrud{
 
 
 
-
-
-//NON POSSO INVIARE DIRETTAMENTE LE FOTO A CLOUDKIT, LE DEVO PRIMA CONVERTIRE IN CKASSETS ED INVIARE QUEST ULTIMO
-//aaaa
 
