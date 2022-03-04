@@ -76,7 +76,6 @@ class Challenges: ObservableObject {
 //        composition = Item(name: test.description, image: "composition", active: 0, category: ["MR", "EC2"])
         self.alltopics = [composition,lights,portrait,photobasics,bandw,macro,streetph,architectural,lighteffects,food,abstract,landscape,colors,sport,nature,fashion,wedding,documentary,lenses]
         self.allchallenges = [rulethirds,centperspect,longexposure,bokeh]
-        
 
     }
     
