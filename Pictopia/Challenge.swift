@@ -147,7 +147,7 @@ struct HItemView: View {
 
 //struct Challenge_Previews: PreviewProvider {
 //    static var previews: some View {
-//        Challenge()
+//        Challenge(item: <#Item#>)
 //        
 //            .preferredColorScheme(ColorScheme .dark)
 //    }

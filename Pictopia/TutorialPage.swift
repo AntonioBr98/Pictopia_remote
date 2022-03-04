@@ -98,7 +98,7 @@ struct TutorialPage: View {
     
 //    let player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "VideoTest", ofType: "MOV")!))
         
-    let text11:LocalizedStringKey = "OnboardingMessage3"
+    let text11:LocalizedStringKey = "Join"
     let text12:LocalizedStringKey = "Central Perspective"
     var body: some View {
         
