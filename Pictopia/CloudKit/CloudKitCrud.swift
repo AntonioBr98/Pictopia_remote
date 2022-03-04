@@ -49,7 +49,7 @@ class CloudKitCrudViewModel: ObservableObject{
         guard
 //            let image = UIImage(named: "composition"),
         let url = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first?.appendingPathComponent("upload"),
-              let data = imageSelected.jpegData(compressionQuality: 1.0) else { return }
+        let data = imageSelected.jpegData(compressionQuality: 0.5) else { return }
         
         do {
             try data.write(to: url)
@@ -209,10 +209,11 @@ struct CloudKitCrud: View {
                     
                     Image(uiImage:vm.imageSelected)
                         .resizable()
+                        .frame(height: 250)
                         .cornerRadius(20)
                         .padding(5)
                         .padding()
-                        .scaledToFill()
+                        .scaledToFit()
                     
                     textField
                     addButton
@@ -221,6 +222,7 @@ struct CloudKitCrud: View {
                     
                     Image(selectedchlg.image)
                         .resizable()
+                        .frame(height: 200)
                         .cornerRadius(20)
                         .padding(5)
                         .padding()
