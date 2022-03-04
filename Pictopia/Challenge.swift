@@ -32,7 +32,7 @@ struct Challenge: View {
                         VStack(spacing: 0){
                             VStack{
                                 Text(text5)
-                                    .font(.title)
+                                    .font(.title2)
                                     .fontWeight(.semibold)
                                     .padding([.top, .leading])
                             }

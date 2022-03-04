@@ -39,16 +39,21 @@ struct SignInApple: View {
                     Image("Icon")
                         .frame(width: 200.0, height: 200.0)
                         .scaleEffect(0.15)
+                        .padding()
                            
                     Spacer()
                     
                     Text(text30)
-                        .font(.title)
+                        .font(.title2)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding(.bottom)
                                
                     Spacer()
+                    
+                    VStack(alignment: .leading) {
+
+                        Spacer()
                     
                     HStack(spacing: 35){
                         Image(systemName: "rectangle.stack.badge.play.fill")
@@ -56,9 +61,9 @@ struct SignInApple: View {
                                 .scaleEffect(2.8)
                                 .foregroundColor(.accentColor)
                                    
-                        VStack{
+                        VStack(alignment: .leading){
                             Text(text31)
-                                .font(.title2)
+                                .font(.title3)
                                 .fontWeight(.bold)
                                 .padding(.trailing)
                                 .frame(alignment:.leading)
@@ -78,9 +83,9 @@ struct SignInApple: View {
                             .scaleEffect(2.8)
                             .foregroundColor(.accentColor)
                                    
-                        VStack{
+                        VStack(alignment: .leading){
                             Text(text33)
-                                .font(.title2)
+                                .font(.title3)
                                 .fontWeight(.bold)
                                 .padding(.trailing)
                                 .frame(alignment:.leading)
@@ -100,9 +105,9 @@ struct SignInApple: View {
                             .scaleEffect(2.8)
                             .foregroundColor(.accentColor)
                                    
-                        VStack{
+                        VStack(alignment: .leading){
                             Text(text35)
-                                .font(.title2)
+                                .font(.title3)
                                 .fontWeight(.bold)
                                 .padding(.trailing, 120.0)
                                 .frame(alignment:.leading)
@@ -115,9 +120,11 @@ struct SignInApple: View {
                         }.padding(.trailing)
                         .padding(.bottom, 50)
                     
-
+                    }
+                    .padding(.leading, 20.0)
                                
                     SignInButtonView()
+                        .padding(.bottom)
                     
                 }
                 
@@ -272,18 +279,19 @@ struct Profile: View {
         }
     }
 
-struct SignInApple_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            SignInApple()
-            SignInApple()
-                .previewDevice("iPhone 11")
-        }
-    }
-}
-//
 //struct SignInApple_Previews: PreviewProvider {
 //    static var previews: some View {
-//        SignInApple()
+//        Group {
+//            SignInApple()
+//            SignInApple()
+//                .previewDevice("iPhone 11")
+//        }
 //    }
 //}
+//
+
+struct SignInApple_Previews: PreviewProvider {
+    static var previews: some View {
+        SignInApple()
+    }
+}

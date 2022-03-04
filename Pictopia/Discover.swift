@@ -35,8 +35,8 @@ struct Discover: View {
                         VStack(spacing: 0){
                             VStack{
                                 Text(expitem.name)
-                                    .font(.title)
-                                    .fontWeight(.semibold)
+                                    .font(.title2)
+                                    .fontWeight(.bold)
                                     .padding([.top, .leading])
                             }
                             .frame(width: reader.size.width, alignment: .leading)
