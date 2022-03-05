@@ -75,7 +75,7 @@ class CloudKitCrudViewModel: ObservableObject{
             print("Record: \(returnedRecord)")
             print("Error: \(returnedError)")
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 self?.text = ""
                 self?.fetchItems()
             }
