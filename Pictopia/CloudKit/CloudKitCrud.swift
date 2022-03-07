@@ -201,9 +201,10 @@ struct CloudKitCrud: View {
             VStack(alignment: .leading) {
              
                     Text(firstChallenge.title)
-                            .font(.title)
+                            .font(.title2)
                             .fontWeight(.semibold)
                             .multilineTextAlignment(.leading)
+                            .padding()
                 
                 if vm.imageSelected != UIImage() {
                     
@@ -211,9 +212,8 @@ struct CloudKitCrud: View {
                         .resizable()
                         .frame(height: 250)
                         .cornerRadius(20)
-                        .padding(5)
-                        .padding()
                         .scaledToFit()
+                        .padding(.horizontal)
                     
                     textField
                     addButton
@@ -224,18 +224,16 @@ struct CloudKitCrud: View {
                         .resizable()
                         .frame(height: 200)
                         .cornerRadius(20)
-                        .padding(5)
-                        .padding()
                         .scaledToFit()
                     
                 }
 
 
                     Text(firstChallenge.secondTitle)
-                            .font(.title)
+                            .font(.title2)
                             .fontWeight(.semibold)
                             .multilineTextAlignment(.leading)
-                            .padding(.top)
+                            .padding()
 
 
         //            Message no uploads
