@@ -83,13 +83,13 @@ struct SearchPage: View {
                                 LazyVGrid(columns: columns, spacing: spacing){
                                     if searchText != "" {
                                     ForEach(challenges.allchallenges.filter { $0.name.contains(searchText)}){ item in
-                                        NavigationLink (destination: TutorialPage(selectedchlg: item))
+                                        NavigationLink (destination: TutorialPage2(selectedchlg: item))
                                          { SearchChallengeItemView(item: item)   }
                                     }
                                     }
                                     else {
                                         ForEach(challenges.allchallenges){ item in
-                                            NavigationLink (destination: TutorialPage(selectedchlg: item))
+                                            NavigationLink (destination: TutorialPage2(selectedchlg: item))
                                             {
                                                 SearchChallengeItemView(item: item)
                                             }
