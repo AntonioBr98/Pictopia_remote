@@ -101,7 +101,7 @@ class CloudKitCrudViewModel: ObservableObject{
         
         
 //        DO IL LIMITE DI QUANTI ELEMENTI VOGLIO FAR APPARIRE A SCHERMO DAL DATABASE, il max è 100
-        queryOperation.resultsLimit = 25
+        queryOperation.resultsLimit = 30
         
         
 //        CREO ARRAY PER TUTTI I STILI CHE HO CREATO
@@ -192,16 +192,20 @@ struct CloudKitCrud: View {
     @State var showActionSheet: Bool = false
     let text13:LocalizedStringKey = "UnUploaded"
     let text14:LocalizedStringKey = "OnboardingMessage3"
+    let spacing:CGFloat = 10
+    @State private var number = 3
     
 
     
     var body: some View {
-//ScrollView{
-//            VStack
-//        (alignment: .leading)
-//        {
-            List{
-
+        let columns = Array(
+            repeating: GridItem(.flexible(), spacing: spacing), count: number)
+ScrollView{
+            VStack(alignment: .leading){
+//            List{
+//        LazyHGrid(rows: columns, spacing: spacing){
+            
+            
                     Text(firstChallenge.title)
                             .font(.title2)
                             .fontWeight(.semibold)
@@ -241,7 +245,7 @@ struct CloudKitCrud: View {
                             .font(.title2)
                             .fontWeight(.semibold)
                             .multilineTextAlignment(.leading)
-//                            .padding()
+                            .padding()
 
 
         //            Message no uploads
@@ -256,6 +260,7 @@ struct CloudKitCrud: View {
 
 //
 //                List{
+                LazyVGrid(columns: columns, spacing: spacing){
 //                    VM photos perchè è un array
                     ForEach(vm.photos
                                 .filter { $0.name.contains(selectedchlg.image)}
@@ -264,28 +269,35 @@ struct CloudKitCrud: View {
                     ){
                         photo in
 //                        Text($0)
-                        VStack(spacing: 10){
+                        VStack(spacing: 2){
                             
 
                             if let url = photo.imageURL, let data = try? Data(contentsOf: url), let image = UIImage(data: data)   {
                                 
-                                                    Spacer()
+
                                 Image(uiImage: image)
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
-                                    .frame(width: 350, height: 200)
+                                    .frame(width: 120, height: 120)
                                     .clipped()
-                                                    Spacer()
+                                    .cornerRadius(10)
+                                    .onTapGesture {
+//                                        ImagePreview(img: image)
+
+                                    }
                                 }
+
+
 //                            Text(photo.name)
                             }
-                        .frame(maxWidth: .infinity)   
-                        .onTapGesture {
-//                                vm.updateItem(photo: photo)
-                        }
+                        .frame(maxWidth: .infinity)
+//                        .onTapGesture {
+////                                vm.updateItem(photo: photo)
+//                        }
                     }
                     .onDelete(perform: vm.deleteItem)
                     
+            }
                 }
                 .listStyle(PlainListStyle())
                  
@@ -307,7 +319,7 @@ struct CloudKitCrud: View {
             }))
 
         }
-//}
+}
 }
 
 //struct CloudKitCrud_Previews: PreviewProvider {

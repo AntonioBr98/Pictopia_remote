@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2B6292AD27B9249E00C42445 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */; };
+		2B84846D27D7C0680094DAE8 /* VideoTest.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2B84846C27D7C0680094DAE8 /* VideoTest.mov */; };
 		2B89760C27CFC2480013CE8F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B89760E27CFC2480013CE8F /* Localizable.strings */; };
+		2BB4F8EC27D7B14800E500FF /* ImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB4F8EB27D7B14800E500FF /* ImagePreview.swift */; };
 		2BBD274527BA5A4A00FA5C07 /* CloudKitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBD274427BA5A4A00FA5C07 /* CloudKitUser.swift */; };
 		2BBD274927BA5AD200FA5C07 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBD274827BA5AD200FA5C07 /* CloudKit.framework */; };
 		2BD97FFE27BBA73100D0EFC4 /* CloudKitCrud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD97FFD27BBA73100D0EFC4 /* CloudKitCrud.swift */; };
@@ -31,7 +33,6 @@
 		C6C6D3BE27BEE8F400984987 /* ChallengeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */; };
 		C6C7ED0727CD1E7C004F3E6F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C7ED0627CD1E7C004F3E6F /* ImagePicker.swift */; };
 		C6D2D7C027C56E2800AA6529 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D2D7BF27C56E2800AA6529 /* OnboardingView.swift */; };
-		C6E74E2727D7BA49003ED02C /* VideoTest.mov in Resources */ = {isa = PBXBuildFile; fileRef = C6E74E2627D7BA49003ED02C /* VideoTest.mov */; };
 		EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +55,10 @@
 
 /* Begin PBXFileReference section */
 		2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2B84846C27D7C0680094DAE8 /* VideoTest.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = VideoTest.mov; path = ../../../../../Downloads/VideoTest.mov; sourceTree = "<group>"; };
 		2B89760D27CFC2480013CE8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2B89760F27CFC2510013CE8F /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2BB4F8EB27D7B14800E500FF /* ImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreview.swift; sourceTree = "<group>"; };
 		2BBD274427BA5A4A00FA5C07 /* CloudKitUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUser.swift; sourceTree = "<group>"; };
 		2BBD274627BA5A8200FA5C07 /* Pictopia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pictopia.entitlements; sourceTree = "<group>"; };
 		2BBD274827BA5AD200FA5C07 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -83,7 +86,6 @@
 		C6C6D3C127BF0AE900984987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C6C7ED0627CD1E7C004F3E6F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		C6D2D7BF27C56E2800AA6529 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		C6E74E2627D7BA49003ED02C /* VideoTest.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = VideoTest.mov; sourceTree = "<group>"; };
 		EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 			children = (
 				2BBD274427BA5A4A00FA5C07 /* CloudKitUser.swift */,
 				2BD97FFD27BBA73100D0EFC4 /* CloudKitCrud.swift */,
+				2BB4F8EB27D7B14800E500FF /* ImagePreview.swift */,
 			);
 			path = CloudKit;
 			sourceTree = "<group>";
@@ -169,7 +172,6 @@
 				C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */,
 				C6D2D7BF27C56E2800AA6529 /* OnboardingView.swift */,
 				C6C7ED0627CD1E7C004F3E6F /* ImagePicker.swift */,
-				C6E74E2627D7BA49003ED02C /* VideoTest.mov */,
 				2BF9101727B9142100324E31 /* Assets.xcassets */,
 				2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */,
 				53DCA8C127BD43E200747270 /* Dario+Alba */,
@@ -182,6 +184,7 @@
 		2BF9101927B9142100324E31 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				2B84846C27D7C0680094DAE8 /* VideoTest.mov */,
 				2BF9101A27B9142100324E31 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -323,7 +326,7 @@
 				2B6292AD27B9249E00C42445 /* Launch Screen.storyboard in Resources */,
 				2BF9101B27B9142100324E31 /* Preview Assets.xcassets in Resources */,
 				2BF9101827B9142100324E31 /* Assets.xcassets in Resources */,
-				C6E74E2727D7BA49003ED02C /* VideoTest.mov in Resources */,
+				2B84846D27D7C0680094DAE8 /* VideoTest.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +361,7 @@
 				C682F35E27C6980900B7E541 /* SignInApple.swift in Sources */,
 				53DCA8C327BD440D00747270 /* Discover.swift in Sources */,
 				C6C109D627D664580027BBD0 /* TutorialPage2.swift in Sources */,
+				2BB4F8EC27D7B14800E500FF /* ImagePreview.swift in Sources */,
 				C6C6D3BE27BEE8F400984987 /* ChallengeDetails.swift in Sources */,
 				53DCA8C027BD43B400747270 /* Objects.swift in Sources */,
 				5397920727BDA65500DFDDA0 /* Explore.swift in Sources */,
