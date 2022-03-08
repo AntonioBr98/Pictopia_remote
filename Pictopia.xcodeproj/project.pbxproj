@@ -538,7 +538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_ASSET_PATHS = "\"Pictopia/Preview Content\"";
-				DEVELOPMENT_TEAM = 88Z274NHH6;
+				DEVELOPMENT_TEAM = 6NK492Y953;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pictopia/Info.plist;
@@ -555,7 +555,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = ramona.com.Pictopia;
+				PRODUCT_BUNDLE_IDENTIFIER = braccolino.com.Pictopia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -572,7 +572,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_ASSET_PATHS = "\"Pictopia/Preview Content\"";
-				DEVELOPMENT_TEAM = 88Z274NHH6;
+				DEVELOPMENT_TEAM = 6NK492Y953;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pictopia/Info.plist;
@@ -589,7 +589,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = ramona.com.Pictopia;
+				PRODUCT_BUNDLE_IDENTIFIER = braccolino.com.Pictopia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

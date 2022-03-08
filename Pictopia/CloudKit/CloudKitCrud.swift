@@ -206,25 +206,32 @@ struct CloudKitCrud: View {
                             .multilineTextAlignment(.leading)
                             .padding()
                 
+
+//
+//                    Image(uiImage:vm.imageSelected)
+//                        .resizable()
+//                        .frame(height: 250)
+//                        .cornerRadius(20)
+//                        .scaledToFit()
+//                        .padding(.horizontal)
+                                    Image(selectedchlg.image)
+                                        .resizable()
+                                        .frame(height: 200)
+                                        .cornerRadius(20)
+                                        .scaledToFit()
+                
+                
                 if vm.imageSelected != UIImage() {
-                    
-                    Image(uiImage:vm.imageSelected)
-                        .resizable()
-                        .frame(height: 250)
-                        .cornerRadius(20)
-                        .scaledToFit()
-                        .padding(.horizontal)
-                    
-                    textField
+//                    textField
                     addButton
                 }
                 else {
                     
-                    Image(selectedchlg.image)
-                        .resizable()
-                        .frame(height: 200)
-                        .cornerRadius(20)
-                        .scaledToFit()
+//                    Image(selectedchlg.image)
+//                        .resizable()
+//                        .frame(height: 200)
+//                        .cornerRadius(20)
+//                        .scaledToFit()
                     
                 }
 
