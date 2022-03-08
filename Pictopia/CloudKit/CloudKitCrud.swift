@@ -190,7 +190,6 @@ struct CloudKitCrud: View {
     
     @Binding var showChallengeUpdates: Bool
     @State var showActionSheet: Bool = false
-    let columns: [GridItem] = [GridItem(), GridItem(), GridItem()]
     let text13:LocalizedStringKey = "UnUploaded"
     let text14:LocalizedStringKey = "OnboardingMessage3"
     
@@ -198,33 +197,42 @@ struct CloudKitCrud: View {
     
     var body: some View {
 //ScrollView{
-            VStack(alignment: .leading) {
-             
+//            VStack
+//        (alignment: .leading)
+//        {
+            List{
+
                     Text(firstChallenge.title)
                             .font(.title2)
                             .fontWeight(.semibold)
                             .multilineTextAlignment(.leading)
                             .padding()
                 
+
+//
+//                    Image(uiImage:vm.imageSelected)
+//                        .resizable()
+//                        .frame(height: 250)
+//                        .cornerRadius(20)
+//                        .scaledToFit()
+//                        .padding(.horizontal)
+                                    Image(selectedchlg.image)
+                                        .resizable()
+                                        .frame(height: 200)
+                                        .cornerRadius(20)
+                                        .scaledToFit()
+                
                 if vm.imageSelected != UIImage() {
-                    
-                    Image(uiImage:vm.imageSelected)
-                        .resizable()
-                        .frame(height: 250)
-                        .cornerRadius(20)
-                        .scaledToFit()
-                        .padding(.horizontal)
-                    
-                    textField
+//                    textField
                     addButton
                 }
                 else {
                     
-                    Image(selectedchlg.image)
-                        .resizable()
-                        .frame(height: 200)
-                        .cornerRadius(20)
-                        .scaledToFit()
+//                    Image(selectedchlg.image)
+//                        .resizable()
+//                        .frame(height: 200)
+//                        .cornerRadius(20)
+//                        .scaledToFit()
                     
                 }
 
@@ -233,7 +241,7 @@ struct CloudKitCrud: View {
                             .font(.title2)
                             .fontWeight(.semibold)
                             .multilineTextAlignment(.leading)
-                            .padding()
+//                            .padding()
 
 
         //            Message no uploads
@@ -244,10 +252,10 @@ struct CloudKitCrud: View {
 //                        .multilineTextAlignment(.leading)
 //                        .padding(.top, 2)
 
-                    Spacer()
+//                    Spacer()
 
 //
-                List{
+//                List{
 //                    VM photos perchè è un array
                     ForEach(vm.photos
                                 .filter { $0.name.contains(selectedchlg.image)}
@@ -256,16 +264,22 @@ struct CloudKitCrud: View {
                     ){
                         photo in
 //                        Text($0)
-                        HStack{
+                        VStack(spacing: 10){
                             
 
                             if let url = photo.imageURL, let data = try? Data(contentsOf: url), let image = UIImage(data: data)   {
+                                
+                                                    Spacer()
                                 Image(uiImage: image)
                                     .resizable()
-                                    .frame(width: 100, height: 100)
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 350, height: 200)
+                                    .clipped()
+                                                    Spacer()
                                 }
-                            Text(photo.name)
+//                            Text(photo.name)
                             }
+                        .frame(maxWidth: .infinity)   
                         .onTapGesture {
 //                                vm.updateItem(photo: photo)
                         }
@@ -275,7 +289,7 @@ struct CloudKitCrud: View {
                 }
                 .listStyle(PlainListStyle())
                  
-            }
+//            }
             .navigationTitle(selectedchlg.name)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing:
