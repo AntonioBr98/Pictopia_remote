@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
+    
     let text:LocalizedStringKey = "Discover"
     let text2:LocalizedStringKey = "Search"
     let text3:LocalizedStringKey = "Profile"
