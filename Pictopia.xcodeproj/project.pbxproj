@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2B6292AD27B9249E00C42445 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */; };
-		2B84846D27D7C0680094DAE8 /* VideoTest.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2B84846C27D7C0680094DAE8 /* VideoTest.mov */; };
 		2B89760C27CFC2480013CE8F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B89760E27CFC2480013CE8F /* Localizable.strings */; };
+		2BABC86327D94FBE005A42A4 /* VideoTest.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2BABC86227D94FBE005A42A4 /* VideoTest.mov */; };
 		2BB4F8EC27D7B14800E500FF /* ImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB4F8EB27D7B14800E500FF /* ImagePreview.swift */; };
 		2BBD274527BA5A4A00FA5C07 /* CloudKitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBD274427BA5A4A00FA5C07 /* CloudKitUser.swift */; };
 		2BBD274927BA5AD200FA5C07 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BBD274827BA5AD200FA5C07 /* CloudKit.framework */; };
@@ -55,9 +55,9 @@
 
 /* Begin PBXFileReference section */
 		2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		2B84846C27D7C0680094DAE8 /* VideoTest.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = VideoTest.mov; path = ../../../../../Downloads/VideoTest.mov; sourceTree = "<group>"; };
 		2B89760D27CFC2480013CE8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2B89760F27CFC2510013CE8F /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2BABC86227D94FBE005A42A4 /* VideoTest.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = VideoTest.mov; path = ../../../../Desktop/VideoTest.mov; sourceTree = "<group>"; };
 		2BB4F8EB27D7B14800E500FF /* ImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreview.swift; sourceTree = "<group>"; };
 		2BBD274427BA5A4A00FA5C07 /* CloudKitUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUser.swift; sourceTree = "<group>"; };
 		2BBD274627BA5A8200FA5C07 /* Pictopia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pictopia.entitlements; sourceTree = "<group>"; };
@@ -184,7 +184,6 @@
 		2BF9101927B9142100324E31 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				2B84846C27D7C0680094DAE8 /* VideoTest.mov */,
 				2BF9101A27B9142100324E31 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -201,6 +200,7 @@
 		2BF9102D27B9142200324E31 /* PictopiaUITests */ = {
 			isa = PBXGroup;
 			children = (
+				2BABC86227D94FBE005A42A4 /* VideoTest.mov */,
 				2BF9102E27B9142200324E31 /* PictopiaUITests.swift */,
 				2BF9103027B9142200324E31 /* PictopiaUITestsLaunchTests.swift */,
 			);
@@ -326,7 +326,6 @@
 				2B6292AD27B9249E00C42445 /* Launch Screen.storyboard in Resources */,
 				2BF9101B27B9142100324E31 /* Preview Assets.xcassets in Resources */,
 				2BF9101827B9142100324E31 /* Assets.xcassets in Resources */,
-				2B84846D27D7C0680094DAE8 /* VideoTest.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BABC86327D94FBE005A42A4 /* VideoTest.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
