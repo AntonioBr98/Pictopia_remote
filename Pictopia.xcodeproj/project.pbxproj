@@ -25,7 +25,6 @@
 		53DCA8BE27BD43B400747270 /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BB27BD43B400747270 /* Challenges.swift */; };
 		53DCA8C027BD43B400747270 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8BD27BD43B400747270 /* Objects.swift */; };
 		53DCA8C327BD440D00747270 /* Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DCA8C227BD440D00747270 /* Discover.swift */; };
-		C6468C7F27D950E90053C765 /* Videotest.mov in Resources */ = {isa = PBXBuildFile; fileRef = C6468C7E27D950E90053C765 /* Videotest.mov */; };
 		C682F35E27C6980900B7E541 /* SignInApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682F35D27C6980900B7E541 /* SignInApple.swift */; };
 		C6C109D627D664580027BBD0 /* TutorialPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C109D527D664580027BBD0 /* TutorialPage2.swift */; };
 		C6C6D3BA27BEE82600984987 /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3B927BEE82600984987 /* TutorialPage.swift */; };
@@ -33,6 +32,7 @@
 		C6C6D3BE27BEE8F400984987 /* ChallengeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */; };
 		C6C7ED0727CD1E7C004F3E6F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C7ED0627CD1E7C004F3E6F /* ImagePicker.swift */; };
 		C6D2D7C027C56E2800AA6529 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D2D7BF27C56E2800AA6529 /* OnboardingView.swift */; };
+		C6EC534527D953900059B33D /* VideoTest.MOV in Resources */ = {isa = PBXBuildFile; fileRef = C6EC534427D953900059B33D /* VideoTest.MOV */; };
 		EEF84B7327BE8AC700AFAEC0 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +77,6 @@
 		53DCA8BB27BD43B400747270 /* Challenges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
 		53DCA8BD27BD43B400747270 /* Objects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Objects.swift; path = ../Objects.swift; sourceTree = "<group>"; };
 		53DCA8C227BD440D00747270 /* Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discover.swift; sourceTree = "<group>"; };
-		C6468C7E27D950E90053C765 /* Videotest.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Videotest.mov; sourceTree = "<group>"; };
 		C682F35D27C6980900B7E541 /* SignInApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInApple.swift; sourceTree = "<group>"; };
 		C6C109D527D664580027BBD0 /* TutorialPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPage2.swift; sourceTree = "<group>"; };
 		C6C6D3B927BEE82600984987 /* TutorialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPage.swift; sourceTree = "<group>"; };
@@ -86,6 +85,7 @@
 		C6C6D3C127BF0AE900984987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C6C7ED0627CD1E7C004F3E6F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		C6D2D7BF27C56E2800AA6529 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		C6EC534427D953900059B33D /* VideoTest.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = VideoTest.MOV; sourceTree = "<group>"; };
 		EEF84B7227BE8AC700AFAEC0 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,8 +172,8 @@
 				C6C6D3BD27BEE8F400984987 /* ChallengeDetails.swift */,
 				C6D2D7BF27C56E2800AA6529 /* OnboardingView.swift */,
 				C6C7ED0627CD1E7C004F3E6F /* ImagePicker.swift */,
-				C6468C7E27D950E90053C765 /* Videotest.mov */,
 				2BF9101727B9142100324E31 /* Assets.xcassets */,
+				C6EC534427D953900059B33D /* VideoTest.MOV */,
 				2B6292AC27B9249E00C42445 /* Launch Screen.storyboard */,
 				53DCA8C127BD43E200747270 /* Dario+Alba */,
 				2BBD274327BA5A1000FA5C07 /* CloudKit */,
@@ -322,10 +322,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6EC534527D953900059B33D /* VideoTest.MOV in Resources */,
 				2B89760C27CFC2480013CE8F /* Localizable.strings in Resources */,
 				2B6292AD27B9249E00C42445 /* Launch Screen.storyboard in Resources */,
 				2BF9101B27B9142100324E31 /* Preview Assets.xcassets in Resources */,
-				C6468C7F27D950E90053C765 /* Videotest.mov in Resources */,
 				2BF9101827B9142100324E31 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
