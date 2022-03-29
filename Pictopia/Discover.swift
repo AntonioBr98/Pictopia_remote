@@ -44,11 +44,11 @@ struct Discover: View {
                             ScrollView(.horizontal,showsIndicators: false){
                                 LazyHGrid(rows: columns, spacing: spacing){
                                     ForEach(challenges.alltopics.filter { $0.category.contains(expitem.tag)}){ item in
-                                        NavigationLink (destination: Challenge(item: item))
+                                        NavigationLink (destination: Challenge(item: item)){
 //                                        Button(action: {
 //                                        nav=true
 //                                        })
-                                        {
+                                        
                                             ItemView(item: item)
 //                                                .mask(
 //                                                    Text("SWIFT!")

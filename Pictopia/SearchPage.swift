@@ -60,8 +60,7 @@ struct SearchPage: View {
                                     }
                                     else {
                                         ForEach(challenges.alltopics){ item in
-                                            NavigationLink (destination: Challenge(item: item))
-                                            {
+                                            NavigationLink (destination: Challenge(item: item)) {
                                                 SearchTopicItemView(item: item)
                                             }
                                         }

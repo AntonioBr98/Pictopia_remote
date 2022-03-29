@@ -41,11 +41,8 @@ struct Challenge: View {
                             ScrollView(showsIndicators: false){
                                 LazyVGrid(columns: columns, spacing: spacing){
                                     ForEach(challenges.allchallenges.filter { $0.category.contains(item.image)}){ item in
-                                        NavigationLink (destination: TutorialPage(selectedchlg: item))
-//                                        Button(action: {
-//                                        
-//                                        })
-                                         { HItemView(item: item)   }
+                                        NavigationLink (destination: TutorialPage(selectedchlg: item)) {
+                                         HItemView(item: item)   }
                                     }
                                     
                                 }

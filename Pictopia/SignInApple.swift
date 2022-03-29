@@ -55,69 +55,71 @@ struct SignInApple: View {
 
                         Spacer()
                     
-                    HStack(spacing: 35){
-                        Image(systemName: "rectangle.stack.badge.play.fill")
-                                .frame(width: 60.0, height: 50.0)
-                                .scaleEffect(2.8)
-                                .foregroundColor(.accentColor)
-                                   
-                        VStack(alignment: .leading){
-                            Text(text31)
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .padding(.trailing)
-                                .frame(alignment:.leading)
+                        HStack(spacing: 25){
+                            Image(systemName: "rectangle.stack.badge.play.fill")
+                                    .frame(width: 60.0, height: 50.0)
+                                    .scaleEffect(2.2)
+                                    .foregroundColor(.accentColor)
                                        
-                            Text(text32)
-                                .foregroundColor(Color.gray)
+                            VStack(alignment: .leading){
+                                Text(text31)
+                                    .font(.title3)
+                                    .fontWeight(.bold)
+                                    .padding(.trailing)
+                                    .frame(alignment:.leading)
+                                           
+                                Text(text32)
+                                    .foregroundColor(Color.gray)
+                                           
+                            }
                                        
                         }
-                                   
-                    }
                     
-                    Spacer()
+                        Spacer()
 
-                    HStack(spacing: 35){
-                        Image(systemName: "photo.fill")
-                            .frame(width: 60.0, height: 50.0)
-                            .scaleEffect(2.8)
-                            .foregroundColor(.accentColor)
-                                   
-                        VStack(alignment: .leading){
-                            Text(text33)
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .padding(.trailing)
-                                .frame(alignment:.leading)
+                        HStack(spacing: 25){
+                            Image(systemName: "photo.fill")
+                                .frame(width: 60.0, height: 50.0)
+                                .scaleEffect(2.2)
+                                .foregroundColor(.accentColor)
                                        
-                            Text(text34)
-                                .foregroundColor(Color.gray)
+                            VStack(alignment: .leading){
+                                Text(text33)
+                                    .font(.title3)
+                                    .fontWeight(.bold)
+                                    .padding(.trailing)
+                                    .frame(alignment:.leading)
+                                           
+                                Text(text34)
+                                    .foregroundColor(Color.gray)
+                                           
+                                }
                                        
-                            }
-                                   
-                        }.padding(.trailing)
+                        }
+                        .padding(.trailing)
                     
-                    Spacer()
+                        Spacer()
                         
-                    HStack(spacing: 35){
-                        Image(systemName: "hand.thumbsup.fill")
-                            .frame(width: 60.0, height: 50.0)
-                            .scaleEffect(2.8)
-                            .foregroundColor(.accentColor)
-                                   
-                        VStack(alignment: .leading){
-                            Text(text35)
-                                .font(.title3)
-                                .fontWeight(.bold)
-                                .padding(.trailing, 120.0)
-                                .frame(alignment:.leading)
+                        HStack(spacing: 25){
+                            Image(systemName: "hand.thumbsup.fill")
+                                .frame(width: 60.0, height: 50.0)
+                                .scaleEffect(2.2)
+                                .foregroundColor(.accentColor)
                                        
-                            Text(text36)
-                                .foregroundColor(Color.gray)
+                            VStack(alignment: .leading){
+                                Text(text35)
+                                    .font(.title3)
+                                    .fontWeight(.bold)
+                                    .padding(.trailing, 120.0)
+                                    .frame(alignment:.leading)
+                                           
+                                Text(text36)
+                                    .foregroundColor(Color.gray)
+                                           
+                                }
                                        
-                            }
-                                   
-                        }.padding(.trailing)
+                        }
+                        .padding(.trailing)
                         .padding(.bottom, 50)
                     
                     }
@@ -279,16 +281,6 @@ struct Profile: View {
         }
     }
 
-//struct SignInApple_Previews: PreviewProvider {
-//    static var previews: some View {
-//        Group {
-//            SignInApple()
-//            SignInApple()
-//                .previewDevice("iPhone 11")
-//        }
-//    }
-//}
-//
 
 struct SignInApple_Previews: PreviewProvider {
     static var previews: some View {
